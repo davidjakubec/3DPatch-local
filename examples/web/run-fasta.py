@@ -1,5 +1,5 @@
 from sys import argv
-import logging
+#import logging
 import requests
 
 ################################################################################
@@ -11,8 +11,8 @@ def parse_fasta(fasta_file):
     seq = ''.join(cont[1:])
     return fasta_header, seq
 
-def configure_logging(fasta_header):
-    logging.basicConfig(filename = fasta_header + '.log', filemode = 'w', level = logging.INFO)
+#def configure_logging(fasta_header):
+#    logging.basicConfig(filename = fasta_header + '.log', filemode = 'w', level = logging.INFO)
 
 def phmmer_search(seq):
     url = 'https://www.ebi.ac.uk/Tools/hmmer/search/phmmer'
@@ -61,7 +61,7 @@ def calculate_hmm_information_content_profile(hmm):
 
 def main(fasta_file):
     fasta_header, seq = parse_fasta(fasta_file)
-    configure_logging(fasta_header)
+#    configure_logging(fasta_header)
     phmmer_search_job_id = phmmer_search(seq)
     hmmsearch_search_results_url, hmmsearch_search_hits = hmmsearch_search(phmmer_search_job_id)
     phmmer_search_results_hmm = download_phmmer_search_results_hmm(hmmsearch_search_results_url)
