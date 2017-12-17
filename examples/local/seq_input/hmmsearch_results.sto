@@ -1,0 +1,792 @@
+# STOCKHOLM 1.0
+
+#=GS 1hom_A/3-59    DE [subseq from] mol:protein length:68  ANTENNAPEDIA PROTEIN
+#=GS 4xic_A/3-59    DE [subseq from] mol:protein length:61  Homeotic protein antennapedia
+#=GS 4xic_D/3-59    DE [subseq from] mol:protein length:61  Homeotic protein antennapedia
+#=GS 4xid_A/3-59    DE [subseq from] mol:protein length:61  Homeotic protein antennapedia
+#=GS 4xid_D/3-59    DE [subseq from] mol:protein length:61  Homeotic protein antennapedia
+#=GS 5jlw_A/3-59    DE [subseq from] mol:protein length:61  Homeotic protein antennapedia
+#=GS 5jlw_D/3-59    DE [subseq from] mol:protein length:61  Homeotic protein antennapedia
+#=GS 5jlx_A/3-59    DE [subseq from] mol:protein length:61  Homeotic protein antennapedia
+#=GS 5jlx_D/3-59    DE [subseq from] mol:protein length:61  Homeotic protein antennapedia
+#=GS 9ant_A/4-60    DE [subseq from] mol:protein length:62  ANTENNAPEDIA HOMEODOMAIN
+#=GS 9ant_B/4-60    DE [subseq from] mol:protein length:62  ANTENNAPEDIA HOMEODOMAIN
+#=GS 1ahd_P/3-59    DE [subseq from] mol:protein length:68  Homeotic protein antennapedia
+#=GS 2hoa_A/3-59    DE [subseq from] mol:protein length:68  ANTENNAPEDIA PROTEIN
+#=GS 2r5y_A/29-85   DE [subseq from] mol:protein length:88  Homeotic protein Sex combs reduced
+#=GS 2r5z_A/29-85   DE [subseq from] mol:protein length:88  Homeotic protein Sex combs reduced
+#=GS 4cyc_A/22-78   DE [subseq from] mol:protein length:93  HOMEOTIC PROTEIN ULTRABITHORAX
+#=GS 4uut_A/22-78   DE [subseq from] mol:protein length:93  HOMEOTIC PROTEIN ULTRABITHORAX
+#=GS 4uus_A/6-62    DE [subseq from] mol:protein length:77  HOMEOTIC PROTEIN ULTRABITHORAX
+#=GS 4uus_E/6-62    DE [subseq from] mol:protein length:77  HOMEOTIC PROTEIN ULTRABITHORAX
+#=GS 1b8i_A/21-77   DE [subseq from] mol:protein length:81  PROTEIN (ULTRABITHORAX HOMEOTIC PROTEIN IV)
+#=GS 1san_A/2-53    DE [subseq from] mol:protein length:62  ANTENNAPEDIA PROTEIN
+#=GS 2lp0_A/2-58    DE [subseq from] mol:protein length:60  Homeobox protein Hox-C9
+#=GS 2h1k_A/4-60    DE [subseq from] mol:protein length:63  Pancreatic and duodenal homeobox 1
+#=GS 2h1k_B/4-60    DE [subseq from] mol:protein length:63  Pancreatic and duodenal homeobox 1
+#=GS 2msy_A/10-66   DE [subseq from] mol:protein length:68  Homeobox protein Hox-C9
+#=GS 1puf_A/14-70   DE [subseq from] mol:protein length:77  Homeobox protein Hox-A9
+#=GS 1ftz_A/4-60    DE [subseq from] mol:protein length:70  FUSHI TARAZU PROTEIN
+#=GS 2m34_A/8-64    DE [subseq from] mol:protein length:71  Homeobox protein GBX-1
+#=GS 2me0_A/8-64    DE [subseq from] mol:protein length:71  Homeobox protein GBX-1
+#=GS 2me6_A/8-64    DE [subseq from] mol:protein length:71  Homeobox protein GBX-1
+#=GS 3a01_B/7-63    DE [subseq from] mol:protein length:67  Homeobox protein aristaless
+#=GS 3a01_F/7-63    DE [subseq from] mol:protein length:67  Homeobox protein aristaless
+#=GS 3lnq_A/1-56    DE [subseq from] mol:protein length:58  Homeobox protein aristaless
+#=GS 2m0c_A/10-66   DE [subseq from] mol:protein length:75  Homeobox protein aristaless-like 4
+#=GS 5lty_K/4-59    DE [subseq from] mol:protein length:71  Homeobox protein CDX-2
+#=GS 5lty_M/4-59    DE [subseq from] mol:protein length:71  Homeobox protein CDX-2
+#=GS 5lux_K/4-59    DE [subseq from] mol:protein length:63  Homeobox protein CDX-1
+#=GS 5lux_L/4-59    DE [subseq from] mol:protein length:63  Homeobox protein CDX-1
+#=GS 1b72_A/38-91   DE [subseq from] mol:protein length:97  PROTEIN (HOMEOBOX PROTEIN HOX-B1)
+#=GS 3zob_A/7-63    DE [subseq from] mol:protein length:67  HOMEOBOX PROTEIN ENGRAILED-2
+#=GS 3a02_A/4-56    DE [subseq from] mol:protein length:60  Homeobox protein aristaless
+#=GS 3hdd_A/2-58    DE [subseq from] mol:protein length:60  ENGRAILED HOMEODOMAIN
+#=GS 3hdd_B/2-58    DE [subseq from] mol:protein length:60  ENGRAILED HOMEODOMAIN
+#=GS 1hdd_C/4-60    DE [subseq from] mol:protein length:61  PROTEIN (ENGRAILED HOMEODOMAIN)
+#=GS 1hdd_D/4-60    DE [subseq from] mol:protein length:61  PROTEIN (ENGRAILED HOMEODOMAIN)
+#=GS 2jwt_A/4-60    DE [subseq from] mol:protein length:61  Segmentation polarity homeobox protein engrailed
+#=GS 2n8g_A/8-64    DE [subseq from] mol:protein length:71  Homeobox protein GBX-1
+#=GS 3cmy_A/3-59    DE [subseq from] mol:protein length:61  Paired box protein Pax-3
+#=GS 1jgg_A/2-58    DE [subseq from] mol:protein length:60  Segmentation Protein Even-Skipped
+#=GS 1jgg_B/2-58    DE [subseq from] mol:protein length:60  Segmentation Protein Even-Skipped
+#=GS 1p7j_A/2-58    DE [subseq from] mol:protein length:59  Segmentation polarity homeobox protein engrailed
+#=GS 1p7j_B/2-58    DE [subseq from] mol:protein length:59  Segmentation polarity homeobox protein engrailed
+#=GS 1p7j_C/2-58    DE [subseq from] mol:protein length:59  Segmentation polarity homeobox protein engrailed
+#=GS 1p7j_D/2-58    DE [subseq from] mol:protein length:59  Segmentation polarity homeobox protein engrailed
+#=GS 1p7i_A/2-58    DE [subseq from] mol:protein length:59  Segmentation polarity homeobox protein engrailed
+#=GS 1p7i_B/2-58    DE [subseq from] mol:protein length:59  Segmentation polarity homeobox protein engrailed
+#=GS 1p7i_C/2-58    DE [subseq from] mol:protein length:59  Segmentation polarity homeobox protein engrailed
+#=GS 1p7i_D/2-58    DE [subseq from] mol:protein length:59  Segmentation polarity homeobox protein engrailed
+#=GS 1ig7_A/1-57    DE [subseq from] mol:protein length:58  Homeotic protein Msx-1
+#=GS 2dmt_A/18-74   DE [subseq from] mol:protein length:80  Homeobox protein BarH-like 1
+#=GS 1fjl_A/19-75   DE [subseq from] mol:protein length:81  PAIRED PROTEIN
+#=GS 1fjl_B/19-75   DE [subseq from] mol:protein length:81  PAIRED PROTEIN
+#=GS 1fjl_C/19-75   DE [subseq from] mol:protein length:81  PAIRED PROTEIN
+#=GS 2l7m_P/4-60    DE [subseq from] mol:protein length:68  Pituitary homeobox 2
+#=GS 2hdd_A/4-60    DE [subseq from] mol:protein length:61  PROTEIN (ENGRAILED HOMEODOMAIN Q50K)
+#=GS 2hdd_B/4-60    DE [subseq from] mol:protein length:61  PROTEIN (ENGRAILED HOMEODOMAIN Q50K)
+#=GS 2cue_A/9-64    DE [subseq from] mol:protein length:80  Paired box protein Pax6
+#=GS 4xrs_G/1-56    DE [subseq from] mol:protein length:56  Homeobox protein DLX-3
+#=GS 4xrs_I/1-56    DE [subseq from] mol:protein length:56  Homeobox protein DLX-3
+#=GS 4rdu_A/5-61    DE [subseq from] mol:protein length:65  Homeobox protein DLX-5
+#=GS 4rdu_D/5-61    DE [subseq from] mol:protein length:65  Homeobox protein DLX-5
+#=GS 2e1o_A/11-64   DE [subseq from] mol:protein length:70  Homeobox protein PRH
+#=GS 2l7f_P/4-60    DE [subseq from] mol:protein length:68  Pituitary homeobox 2
+#=GS 2lkx_A/4-60    DE [subseq from] mol:protein length:68  Pituitary homeobox 3
+#=GS 2djn_A/8-64    DE [subseq from] mol:protein length:70  Homeobox protein DLX-5
+#=GS 1du0_A/1-56    DE [subseq from] mol:protein length:57  ENGRAILED HOMEODOMAIN
+#=GS 1du0_B/1-56    DE [subseq from] mol:protein length:57  ENGRAILED HOMEODOMAIN
+#=GS 1enh_A/1-54    DE [subseq from] mol:protein length:54  ENGRAILED HOMEODOMAIN
+#=GS 2dmu_A/8-64    DE [subseq from] mol:protein length:70  Homeobox protein goosecoid
+#=GS 3a01_A/18-74   DE [subseq from] mol:protein length:93  Homeodomain-containing protein
+#=GS 3a01_E/18-74   DE [subseq from] mol:protein length:93  Homeodomain-containing protein
+#=GS 1ftt_A/3-59    DE [subseq from] mol:protein length:68  THYROID TRANSCRIPTION FACTOR 1 HOMEODOMAIN
+#=GS 2dms_A/8-63    DE [subseq from] mol:protein length:80  Homeobox protein OTX2
+#=GS 3rkq_A/3-58    DE [subseq from] mol:protein length:58  Homeobox protein Nkx-2.5
+#=GS 3rkq_B/3-58    DE [subseq from] mol:protein length:58  Homeobox protein Nkx-2.5
+#=GS 1ztr_A/4-60    DE [subseq from] mol:protein length:61  Segmentation polarity homeobox protein engrailed
+#=GS 2hos_A/5-61    DE [subseq from] mol:protein length:63  Segmentation polarity homeobox protein engrailed
+#=GS 2hos_B/5-61    DE [subseq from] mol:protein length:63  Segmentation polarity homeobox protein engrailed
+#=GS 2hot_A/5-61    DE [subseq from] mol:protein length:63  Segmentation polarity homeobox protein engrailed
+#=GS 2hot_B/5-61    DE [subseq from] mol:protein length:63  Segmentation polarity homeobox protein engrailed
+#=GS 2l9r_A/9-61    DE [subseq from] mol:protein length:69  Homeobox protein Nkx-3.1
+#=GS 4s0h_B/1-53    DE [subseq from] mol:protein length:53  Homeobox protein Nkx-2.5
+#=GS 4s0h_F/1-53    DE [subseq from] mol:protein length:53  Homeobox protein Nkx-2.5
+#=GS 1nk2_P/10-66   DE [subseq from] mol:protein length:77  HOMEOBOX PROTEIN VND
+#=GS 1nk3_P/10-66   DE [subseq from] mol:protein length:77  HOMEOBOX PROTEIN VND
+#=GS 1vnd_A/10-66   DE [subseq from] mol:protein length:77  VND/NK-2 PROTEIN
+#=GS 5flv_A/9-65    DE [subseq from] mol:protein length:285  HOMEOBOX PROTEIN NKX-2.5, T-BOX TRANSCRIPTION FACTOR TBX5
+#=GS 5flv_E/9-65    DE [subseq from] mol:protein length:285  HOMEOBOX PROTEIN NKX-2.5, T-BOX TRANSCRIPTION FACTOR TBX5
+#=GS 5flv_I/9-65    DE [subseq from] mol:protein length:285  HOMEOBOX PROTEIN NKX-2.5, T-BOX TRANSCRIPTION FACTOR TBX5
+#=GS 5flv_M/9-65    DE [subseq from] mol:protein length:285  HOMEOBOX PROTEIN NKX-2.5, T-BOX TRANSCRIPTION FACTOR TBX5
+#=GS 2k40_A/2-58    DE [subseq from] mol:protein length:67  Homeobox expressed in ES cells 1
+#=GS 3a03_A/2-54    DE [subseq from] mol:protein length:56  T-cell leukemia homeobox protein 2
+#=GS 2mgq_A/6-61    DE [subseq from] mol:protein length:68  Homeobox protein ceh-37
+#=GS 2ld5_A/6-62    DE [subseq from] mol:protein length:71  Homeobox protein Hox-A13
+#=GS 2l7z_A/8-64    DE [subseq from] mol:protein length:73  Homeobox protein Hox-A13
+#=GS 5eg0_B/1-57    DE [subseq from] mol:protein length:61  Homeobox protein Hox-B13
+#=GS 5ef6_A/1-57    DE [subseq from] mol:protein length:62  Homeobox protein Hox-B13
+#=GS 5ef6_B/1-57    DE [subseq from] mol:protein length:62  Homeobox protein Hox-B13
+#=GS 5ef6_G/1-57    DE [subseq from] mol:protein length:62  Homeobox protein Hox-B13
+#=GS 5ef6_J/1-57    DE [subseq from] mol:protein length:62  Homeobox protein Hox-B13
+#=GS 5eea_A/1-57    DE [subseq from] mol:protein length:63  Homeobox protein Hox-B13
+#=GS 5eea_B/1-57    DE [subseq from] mol:protein length:63  Homeobox protein Hox-B13
+#=GS 5eea_G/1-57    DE [subseq from] mol:protein length:63  Homeobox protein Hox-B13
+#=GS 5eea_J/1-57    DE [subseq from] mol:protein length:63  Homeobox protein Hox-B13
+#=GS 5ego_B/1-57    DE [subseq from] mol:protein length:63  Homeobox protein Hox-B13
+#=GS 4qtr_A/3-59    DE [subseq from] mol:protein length:72  dualENH
+#=GS 4qtr_B/3-59    DE [subseq from] mol:protein length:72  dualENH
+#=GS 4qtr_C/3-59    DE [subseq from] mol:protein length:72  dualENH
+#=GS 4qtr_D/3-59    DE [subseq from] mol:protein length:72  dualENH
+#=GS 2cra_A/8-64    DE [subseq from] mol:protein length:70  Homeobox protein Hox-B13
+#=GS 5edn_A/9-65    DE [subseq from] mol:protein length:76  Homeobox protein Hox-B13
+#=GS 5edn_B/9-65    DE [subseq from] mol:protein length:76  Homeobox protein Hox-B13
+#=GS 5edn_G/9-65    DE [subseq from] mol:protein length:76  Homeobox protein Hox-B13
+#=GS 5edn_J/9-65    DE [subseq from] mol:protein length:76  Homeobox protein Hox-B13
+#=GS 1qry_A/13-69   DE [subseq from] mol:protein length:80  PROTEIN (HOMEOBOX VENTRAL NERVOUS SYSTEM DEFECTIVE PROTEIN)
+#=GS 2vi6_A/5-60    DE [subseq from] mol:protein length:62  HOMEOBOX PROTEIN NANOG
+#=GS 2vi6_B/5-60    DE [subseq from] mol:protein length:62  HOMEOBOX PROTEIN NANOG
+#=GS 2vi6_C/5-60    DE [subseq from] mol:protein length:62  HOMEOBOX PROTEIN NANOG
+#=GS 2vi6_D/5-60    DE [subseq from] mol:protein length:62  HOMEOBOX PROTEIN NANOG
+#=GS 2vi6_E/5-60    DE [subseq from] mol:protein length:62  HOMEOBOX PROTEIN NANOG
+#=GS 2vi6_F/5-60    DE [subseq from] mol:protein length:62  HOMEOBOX PROTEIN NANOG
+#=GS 2vi6_G/5-60    DE [subseq from] mol:protein length:62  HOMEOBOX PROTEIN NANOG
+#=GS 2vi6_H/5-60    DE [subseq from] mol:protein length:62  HOMEOBOX PROTEIN NANOG
+#=GS 1zq3_P/3-58    DE [subseq from] mol:protein length:68  Homeotic bicoid protein
+#=GS 5hod_A/3-59    DE [subseq from] mol:protein length:61  LIM/homeobox protein Lhx4
+#=GS 5hod_D/3-59    DE [subseq from] mol:protein length:61  LIM/homeobox protein Lhx4
+#=GS 4rbo_A/5-60    DE [subseq from] mol:protein length:70  Putative homeobox protein NANOGP8
+#=GS 4rbo_D/5-60    DE [subseq from] mol:protein length:70  Putative homeobox protein NANOGP8
+#=GS 2kt0_A/24-79   DE [subseq from] mol:protein length:84  Homeobox protein NANOG
+#=GS 2p81_A/3-43    DE [subseq from] mol:protein length:44  Segmentation polarity homeobox protein engrailed
+#=GS 2da2_A/8-64    DE [subseq from] mol:protein length:70  Alpha-fetoprotein enhancer binding protein
+#=GS 2dmq_A/8-64    DE [subseq from] mol:protein length:80  LIM/homeobox protein Lhx9
+#=GS 2da3_A/18-74   DE [subseq from] mol:protein length:80  Alpha-fetoprotein enhancer binding protein
+#=GS 1f43_A/9-61    DE [subseq from] mol:protein length:61  MATING-TYPE PROTEIN A-1
+#=GS 1yrn_A/9-61    DE [subseq from] mol:protein length:61  PROTEIN (MAT A1 HOMEODOMAIN)
+#=GS 1bw5_A/5-60    DE [subseq from] mol:protein length:66  INSULIN GENE ENHANCER PROTEIN ISL-1
+#=GS 1akh_A/9-61    DE [subseq from] mol:protein length:61  PROTEIN (MATING-TYPE PROTEIN A-1)
+#=GS 1le8_A/5-53    DE [subseq from] mol:protein length:53  MATING-TYPE PROTEIN A-1
+#=GS 1b8i_B/2-61    DE [subseq from] mol:protein length:63  PROTEIN (HOMEOBOX PROTEIN EXTRADENTICLE)
+#=GS 2r5y_B/2-61    DE [subseq from] mol:protein length:63  Homeobox protein extradenticle
+#=GS 2r5z_B/2-61    DE [subseq from] mol:protein length:63  Homeobox protein extradenticle
+#=GS 1puf_B/2-61    DE [subseq from] mol:protein length:73  Pre-B-cell leukemia transcription factor-1
+#=GS 4cyc_B/3-62    DE [subseq from] mol:protein length:76  HOMEOBOX PROTEIN EXTRADENTICLE
+#=GS 4uus_B/3-62    DE [subseq from] mol:protein length:76  HOMEOTIC PROTEIN EXTRADENTICLE
+#=GS 4uus_F/3-62    DE [subseq from] mol:protein length:76  HOMEOTIC PROTEIN EXTRADENTICLE
+#=GS 1b72_B/2-61    DE [subseq from] mol:protein length:87  PROTEIN (PBX1)
+#=GS 1pog_A/8-64    DE [subseq from] mol:protein length:67  OCT-1 POU HOMEODOMAIN DNA-BINDING PROTEIN
+#=GS 1lfu_P/3-62    DE [subseq from] mol:protein length:82  homeobox protein PBX1
+#=GS 3d1n_I/94-149  DE [subseq from] mol:protein length:151  POU domain, class 6, transcription factor 1
+#=GS 3d1n_J/94-149  DE [subseq from] mol:protein length:151  POU domain, class 6, transcription factor 1
+#=GS 3d1n_K/94-149  DE [subseq from] mol:protein length:151  POU domain, class 6, transcription factor 1
+#=GS 3d1n_L/94-149  DE [subseq from] mol:protein length:151  POU domain, class 6, transcription factor 1
+#=GS 3d1n_M/94-149  DE [subseq from] mol:protein length:151  POU domain, class 6, transcription factor 1
+#=GS 3d1n_N/94-149  DE [subseq from] mol:protein length:151  POU domain, class 6, transcription factor 1
+#=GS 3d1n_O/94-149  DE [subseq from] mol:protein length:151  POU domain, class 6, transcription factor 1
+#=GS 3d1n_P/94-149  DE [subseq from] mol:protein length:151  POU domain, class 6, transcription factor 1
+#=GS 1au7_A/88-144  DE [subseq from] mol:protein length:146  PROTEIN PIT-1
+#=GS 1au7_B/88-144  DE [subseq from] mol:protein length:146  PROTEIN PIT-1
+#=GS 1ocp_A/9-65    DE [subseq from] mol:protein length:67  OCT-3
+#=GS 1mh3_A/373-421 DE [subseq from] mol:protein length:421  maltose binding-a1 homeodomain protein chimera
+#=GS 1mh4_A/373-421 DE [subseq from] mol:protein length:421  maltose binding-a1 homeodomain protein chimera
+#=GS 5wc9_A/94-150  DE [subseq from] mol:protein length:152  Pituitary-specific positive transcription factor 1
+#=GS 5wc9_B/94-150  DE [subseq from] mol:protein length:152  Pituitary-specific positive transcription factor 1
+#=GS 5wc9_E/94-150  DE [subseq from] mol:protein length:152  Pituitary-specific positive transcription factor 1
+#=GS 5wc9_F/94-150  DE [subseq from] mol:protein length:152  Pituitary-specific positive transcription factor 1
+#=GS 1oct_C/97-153  DE [subseq from] mol:protein length:156  PROTEIN (OCT-1 POU DOMAIN)
+#=GS 1cqt_A/104-160 DE [subseq from] mol:protein length:163  POU DOMAIN, CLASS 2, TRANSCRIPTION FACTOR 1
+#=GS 1cqt_B/104-160 DE [subseq from] mol:protein length:163  POU DOMAIN, CLASS 2, TRANSCRIPTION FACTOR 1
+#=GS 1o4x_A/105-161 DE [subseq from] mol:protein length:167  transcription factor Oct-1
+#=GS 1hdp_A/2-58    DE [subseq from] mol:protein length:63  OCT-2 POU HOMEODOMAIN
+#=GS 1gt0_C/101-157 DE [subseq from] mol:protein length:159  OCTAMER-BINDING TRANSCRIPTION FACTOR 1
+#=GS 1hf0_A/101-157 DE [subseq from] mol:protein length:159  OCTAMER-BINDING TRANSCRIPTION FACTOR 1
+#=GS 1hf0_B/101-157 DE [subseq from] mol:protein length:159  OCTAMER-BINDING TRANSCRIPTION FACTOR 1
+#=GS 2da1_A/8-63    DE [subseq from] mol:protein length:70  Alpha-fetoprotein enhancer binding protein
+#=GS 1e3o_C/102-158 DE [subseq from] mol:protein length:160  OCTAMER-BINDING TRANSCRIPTION FACTOR 1
+#=GS 3l1p_A/97-153  DE [subseq from] mol:protein length:155  POU domain, class 5, transcription factor 1
+#=GS 3l1p_B/97-153  DE [subseq from] mol:protein length:155  POU domain, class 5, transcription factor 1
+#=GS 1du6_A/10-63   DE [subseq from] mol:protein length:64  HOMEOBOX PROTEIN PBX1
+#=GS 4egc_A/507-550 DE [subseq from] mol:protein length:559  Maltose-binding periplasmic protein, Homeobox protein SIX1 chimera
+#=GS 2xsd_C/100-156 DE [subseq from] mol:protein length:164  POU DOMAIN, CLASS 3, TRANSCRIPTION FACTOR 1
+#=GS 2mg4_A/3-52    DE [subseq from] mol:protein length:66  Computational designed homodimer
+#=GS 2mg4_B/3-52    DE [subseq from] mol:protein length:66  Computational designed homodimer
+#=GS 4j19_A/38-73   DE [subseq from] mol:protein length:113  Homeobox-containing protein 1
+#=GS 4j19_A/82-107  DE [subseq from] mol:protein length:113  Homeobox-containing protein 1
+#=GS 4j19_B/38-73   DE [subseq from] mol:protein length:113  Homeobox-containing protein 1
+#=GS 4j19_B/82-107  DE [subseq from] mol:protein length:113  Homeobox-containing protein 1
+#=GS 2cuf_A/10-45   DE [subseq from] mol:protein length:95  FLJ21616 protein
+#=GS 2cuf_A/54-79   DE [subseq from] mol:protein length:95  FLJ21616 protein
+#=GS 2dn0_A/14-64   DE [subseq from] mol:protein length:76  Zinc fingers and homeoboxes protein 3
+#=GS 1uhs_A/7-59    DE [subseq from] mol:protein length:72  homeodomain only protein
+#=GS 1k61_A/3-57    DE [subseq from] mol:protein length:60  Mating-type protein alpha-2
+#=GS 1k61_B/3-57    DE [subseq from] mol:protein length:60  Mating-type protein alpha-2
+#=GS 1k61_C/3-57    DE [subseq from] mol:protein length:60  Mating-type protein alpha-2
+#=GS 1k61_D/3-57    DE [subseq from] mol:protein length:60  Mating-type protein alpha-2
+#=GS 1akh_B/7-61    DE [subseq from] mol:protein length:83  PROTEIN (MATING-TYPE PROTEIN ALPHA-2)
+#=GS 1apl_C/7-61    DE [subseq from] mol:protein length:83  PROTEIN (MAT-ALPHA2 HOMEODOMAIN)
+#=GS 1apl_D/7-61    DE [subseq from] mol:protein length:83  PROTEIN (MAT-ALPHA2 HOMEODOMAIN)
+#=GS 1yrn_B/7-61    DE [subseq from] mol:protein length:83  PROTEIN (MAT ALPHA2 HOMEODOMAIN)
+#=GS 2da5_A/14-61   DE [subseq from] mol:protein length:75  Zinc fingers and homeoboxes protein 3
+#=GS 1mnm_C/32-86   DE [subseq from] mol:protein length:87  PROTEIN (MAT ALPHA-2 TRANSCRIPTIONAL REPRESSOR)
+#=GS 1mnm_D/32-86   DE [subseq from] mol:protein length:87  PROTEIN (MAT ALPHA-2 TRANSCRIPTIONAL REPRESSOR)
+#=GS 3nau_A/9-60    DE [subseq from] mol:protein length:66  Zinc fingers and homeoboxes protein 2
+#=GS 3nau_B/9-60    DE [subseq from] mol:protein length:66  Zinc fingers and homeoboxes protein 2
+#=GS 4ndl_A/22-66   DE [subseq from] mol:protein length:72  ENH-c2b, computational designed homodimer
+#=GS 4ndl_B/22-66   DE [subseq from] mol:protein length:72  ENH-c2b, computational designed homodimer
+#=GS 4ndl_C/22-66   DE [subseq from] mol:protein length:72  ENH-c2b, computational designed homodimer
+#=GS 2hi3_A/10-60   DE [subseq from] mol:protein length:73  Homeodomain-only protein
+#=GS 2nd6_A/1-17    DE [subseq from] mol:protein length:17  Cell penetrating peptide
+#=GS 2nd7_A/1-17    DE [subseq from] mol:protein length:17  Cell penetrating peptide
+#=GS 2nd8_A/1-17    DE [subseq from] mol:protein length:17  Cell penetrating peptide
+#=GS 3nar_A/31-81   DE [subseq from] mol:protein length:96  Zinc fingers and homeoboxes protein 1
+#=GS 3nar_B/31-81   DE [subseq from] mol:protein length:96  Zinc fingers and homeoboxes protein 1
+#=GS 5eg0_A/19-52   DE [subseq from] mol:protein length:57  Homeobox protein Meis2
+#=GS 4xrs_A/18-51   DE [subseq from] mol:protein length:58  Homeobox protein Meis1
+#=GS 4xrs_B/18-51   DE [subseq from] mol:protein length:58  Homeobox protein Meis1
+#=GS 2cqx_A/22-65   DE [subseq from] mol:protein length:72  LAG1 longevity assurance homolog 5
+#=GS 4zn8_A/1-46    DE [subseq from] mol:protein length:51  computationally modified engrailed homeodomain
+#=GS 4zn8_B/1-46    DE [subseq from] mol:protein length:51  computationally modified engrailed homeodomain
+#=GS 4zn8_C/1-46    DE [subseq from] mol:protein length:51  computationally modified engrailed homeodomain
+#=GS 4zn8_D/1-46    DE [subseq from] mol:protein length:51  computationally modified engrailed homeodomain
+#=GS 5ego_A/19-52   DE [subseq from] mol:protein length:57  Homeobox protein Meis1
+#=GS 5bng_A/18-51   DE [subseq from] mol:protein length:60  Homeobox protein Meis2
+#=GS 5bng_B/18-51   DE [subseq from] mol:protein length:60  Homeobox protein Meis2
+#=GS 3k2a_A/22-55   DE [subseq from] mol:protein length:67  Homeobox protein Meis2
+#=GS 3k2a_B/22-55   DE [subseq from] mol:protein length:67  Homeobox protein Meis2
+#=GS 1x2n_A/32-64   DE [subseq from] mol:protein length:73  Homeobox protein PKNOX1
+#=GS 4xrm_A/22-55   DE [subseq from] mol:protein length:64  Homeobox protein Meis2
+#=GS 4xrm_B/22-55   DE [subseq from] mol:protein length:64  Homeobox protein Meis2
+#=GS 2ly9_A/10-62   DE [subseq from] mol:protein length:74  Zinc fingers and homeoboxes protein 1
+#=GS 2d5v_A/98-151  DE [subseq from] mol:protein length:164  Hepatocyte nuclear factor 6
+#=GS 2d5v_B/98-151  DE [subseq from] mol:protein length:164  Hepatocyte nuclear factor 6
+#=GS 1le8_B/7-61    DE [subseq from] mol:protein length:83  Mating-type protein alpha-2
+#=GS 2dmp_A/19-65   DE [subseq from] mol:protein length:89  Zinc fingers and homeoboxes protein 2
+#=GS 1kz0_A/1-16    DE [subseq from] mol:protein length:16  Antennapedia protein
+#=GS 1omq_A/1-16    DE [subseq from] mol:protein length:16  Homeotic antennapedia protein
+#=GS 1s7e_A/96-147  DE [subseq from] mol:protein length:147  Hepatocyte nuclear factor 6
+#=GS 2dmn_A/30-64   DE [subseq from] mol:protein length:83  Homeobox protein TGIF2LX
+#=GS 4ndj_A/2-46    DE [subseq from] mol:protein length:299  Green fluorescent protein, chimeric construct,GFP-like fluorescent chromoprotein FP506, related
+#=GS 1x2m_A/13-57   DE [subseq from] mol:protein length:64  LAG1 longevity assurance homolog 6
+#=GS 2lk2_A/27-62   DE [subseq from] mol:protein length:89  Homeobox protein TGIF1
+#=GS 2nzz_A/1-16    DE [subseq from] mol:protein length:37  Penetratin conjugated Gas (374-394) peptide
+#=GS 2o00_A/1-16    DE [subseq from] mol:protein length:37  Penetratin conjugated Gas (374-394) peptide
+#=GS 2ecb_A/17-63   DE [subseq from] mol:protein length:89  Zinc fingers and homeoboxes protein 1
+#=GS 4ndk_A/2-46    DE [subseq from] mol:protein length:299  E23P-YFP, GFP-like fluorescent chromoprotein FP506, related, chimeric construct,
+#=GS 4ndk_B/2-46    DE [subseq from] mol:protein length:299  E23P-YFP, GFP-like fluorescent chromoprotein FP506, related, chimeric construct,
+#=GS 1kz2_A/1-16    DE [subseq from] mol:protein length:16  Antennapedia protein
+#=GS 2da6_A/66-80   DE [subseq from] mol:protein length:102  Hepatocyte nuclear factor 1-beta
+#=GS 2ecc_A/9-59    DE [subseq from] mol:protein length:76  Homeobox and leucine zipper protein Homez
+#=GS 1lfb_A/69-83   DE [subseq from] mol:protein length:99  LIVER TRANSCRIPTION FACTOR (LFB1)
+#=GS 2lfb_A/70-84   DE [subseq from] mol:protein length:100  LFB1/HNF1 TRANSCRIPTION FACTOR
+#=GS 1wi3_A/9-64    DE [subseq from] mol:protein length:71  DNA-binding protein SATB2
+#=GS 2jt9_B/1-16    DE [subseq from] mol:protein length:17  Modified 16-mer immunosuppressory peptide from Homeotic protein antennapedia
+
+1hom_A/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALCLTERQIKIWFQNRRMKWKK
+#=GR 1hom_A/3-59    PP 89*******************...***********************************8
+4xic_A/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 4xic_A/3-59    PP 89*******************...***********************************8
+4xic_D/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 4xic_D/3-59    PP 89*******************...***********************************8
+4xid_A/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 4xid_A/3-59    PP 89*******************...***********************************8
+4xid_D/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 4xid_D/3-59    PP 89*******************...***********************************8
+5jlw_A/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 5jlw_A/3-59    PP 89*******************...***********************************8
+5jlw_D/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 5jlw_D/3-59    PP 89*******************...***********************************8
+5jlx_A/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 5jlx_A/3-59    PP 89*******************...***********************************8
+5jlx_D/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 5jlx_D/3-59    PP 89*******************...***********************************8
+9ant_A/4-60            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 9ant_A/4-60    PP 89*******************...***********************************8
+9ant_B/4-60            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 9ant_B/4-60    PP 89*******************...***********************************8
+1ahd_P/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 1ahd_P/3-59    PP 89*******************...***********************************8
+2hoa_A/3-59            KRGRQTYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 2hoa_A/3-59    PP 89*******************...***********************************8
+2r5y_A/29-85           KRQRTSYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 2r5y_A/29-85   PP 89*******************...***********************************8
+2r5z_A/29-85           KRQRTSYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 2r5z_A/29-85   PP 89*******************...***********************************8
+4cyc_A/22-78           RRGRQTYTRYQTLELEKEFHT...NHYLTRRRRIEMAHALCLTERQIKIWFQNRRMKLKK
+#=GR 4cyc_A/22-78   PP 89*******************...**********************************98
+4uut_A/22-78           RRGRQTYTRYQTLELEKEFHT...NHYLTRRRRIEMAHALCLTERQIKIWFQNRRMKLKK
+#=GR 4uut_A/22-78   PP 89*******************...**********************************98
+4uus_A/6-62            RRGRQTYTRYQTLELEKEFHT...NHYLTRRRRIEMAHALSLTERQIKIWFQNRRMKLKK
+#=GR 4uus_A/6-62    PP 89*******************...***********************************8
+4uus_E/6-62            RRGRQTYTRYQTLELEKEFHT...NHYLTRRRRIEMAHALSLTERQIKIWFQNRRMKLKK
+#=GR 4uus_E/6-62    PP 89*******************...***********************************8
+1b8i_A/21-77           RRGRQTYTRYQTLELEKEFHT...NHYLTRRRRIEMAHALSLTERQIKIWFQNRRMKLKK
+#=GR 1b8i_A/21-77   PP 89*******************...***********************************8
+1san_A/2-53            -----TYTRYQTLELEKEFHF...NRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKWKK
+#=GR 1san_A/2-53    PP .....79**************...***********************************8
+2lp0_A/2-58            RKKRCPYTKYQTLELEKEFLF...NMYLTRDRRYEVARVLNLTERQVKIWFQNRRMKMKK
+#=GR 2lp0_A/2-58    PP 89*******************...***********************************8
+2h1k_A/4-60            KRTRTAYTRAQLLELEKEFLF...NKYISRPRRVELAVMLNLTERHIKIWFQNRRMKWKK
+#=GR 2h1k_A/4-60    PP 89*******************...***********************************8
+2h1k_B/4-60            KRTRTAYTRAQLLELEKEFLF...NKYISRPRRVELAVMLNLTERHIKIWFQNRRMKWKK
+#=GR 2h1k_B/4-60    PP 89*******************...***********************************8
+2msy_A/10-66           RKKRCPYTKYQTLELEKEFLF...NMYLTRDRRYEVARVLNLTERQVKIWFQNRRMKMKK
+#=GR 2msy_A/10-66   PP 89*******************...***********************************8
+1puf_A/14-70           RKKRCPYTKHQTLELEKEFLF...NMYLTRDRRYEVARLLNLTERQVKIWFQNRRMKMKK
+#=GR 1puf_A/14-70   PP 89*******************...***********************************8
+1ftz_A/4-60            KRTRQTYTRYQTLELEKEFHF...NRYITRRRRIDIANALSLSERQIKIWFQNRRMKSKK
+#=GR 1ftz_A/4-60    PP 89*******************...**********************************98
+2m34_A/8-64            RRRRTAFTSEQLLELEKEFHC...KKYLSLTERSQIAHALKLSEVQVKIWFQNRRAKWKR
+#=GR 2m34_A/8-64    PP 89*******************...***********************************7
+2me0_A/8-64            RRRRTAFTSEQLLELEKEFHC...KKYLSLTERSQIAHALKLSEVQVKIWFQNRRAKWKR
+#=GR 2me0_A/8-64    PP 89*******************...***********************************7
+2me6_A/8-64            RRRRTAFTSEQLLELEKEFHC...KKYLSLTERSQIAHALKLSEVQVKIWFQNRRAKWKR
+#=GR 2me6_A/8-64    PP 89*******************...***********************************7
+3a01_B/7-63            RRYRTTFTSFQLEELEKAFSR...THYPDVFTREELAMKIGLTEARIQVWFQNRRAKWRK
+#=GR 3a01_B/7-63    PP 89*******************...***********************************8
+3a01_F/7-63            RRYRTTFTSFQLEELEKAFSR...THYPDVFTREELAMKIGLTEARIQVWFQNRRAKWRK
+#=GR 3a01_F/7-63    PP 89*******************...***********************************8
+3lnq_A/1-56            -RYRTTFTSFQLEELEKAFSR...THYPDVFTREELAMKIGLTEARIQVWFQNRRAKWRK
+#=GR 3lnq_A/1-56    PP .78******************...***********************************8
+2m0c_A/10-66           RRNRTTFTSYQLEELEKVFQK...THYPDVYAREQLAMRTDLTEARVQVWFQNRRAKWRK
+#=GR 2m0c_A/10-66   PP 89*******************...***********************************8
+5lty_K/4-59            -KYRVVYTDHQRLELEKEFHY...SRYITIRRKAELAATLGLSERQVKIWFQNRRAKERK
+#=GR 5lty_K/4-59    PP .6799****************...**********************************97
+5lty_M/4-59            -KYRVVYTDHQRLELEKEFHY...SRYITIRRKAELAATLGLSERQVKIWFQNRRAKERK
+#=GR 5lty_M/4-59    PP .6799****************...**********************************97
+5lux_K/4-59            -KYRVVYTDHQRLELEKEFHY...SRYITIRRKSELAANLGLTERQVKIWFQNRRAKERK
+#=GR 5lux_K/4-59    PP .6799****************...**********************************97
+5lux_L/4-59            -KYRVVYTDHQRLELEKEFHY...SRYITIRRKSELAANLGLTERQVKIWFQNRRAKERK
+#=GR 5lux_L/4-59    PP .6799****************...**********************************97
+1b72_A/38-91           ---RTNFTTRQLTELEKEFHF...NKYLSRARRVEIAATLELNETQVKIWFQNRRMKQKK
+#=GR 1b72_A/38-91   PP ...9*****************...***********************************8
+3zob_A/7-63            KRPRTAFTAEQLQRLKAEFQT...NRYLTEQRRQSLAQELGLNESQIKIWFQNKRAKIKK
+#=GR 3zob_A/7-63    PP 89*******************...***********************************8
+3a02_A/4-56            ----MTFTSFQLEELEKAFSR...THYPDVFTREELAMKIGLTEARIQVWFQNRRAKWRK
+#=GR 3a02_A/4-56    PP ....58***************...***********************************8
+3hdd_A/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNKRAKIKK
+#=GR 3hdd_A/2-58    PP 89*******************...***********************************8
+3hdd_B/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNKRAKIKK
+#=GR 3hdd_B/2-58    PP 89*******************...***********************************8
+1hdd_C/4-60            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNKRAKIKK
+#=GR 1hdd_C/4-60    PP 89*******************...***********************************8
+1hdd_D/4-60            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNKRAKIKK
+#=GR 1hdd_D/4-60    PP 89*******************...***********************************8
+2jwt_A/4-60            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNKRAKIKK
+#=GR 2jwt_A/4-60    PP 89*******************...***********************************8
+2n8g_A/8-64            RRRRTAFTSEQLLELRKEFHC...KKYLSLTERSQIAHALKLSEVQVKIWFQNERAKWKR
+#=GR 2n8g_A/8-64    PP 89*******************...***********************************7
+3cmy_A/3-59            RRSRTTFTAEQLEELERAFER...THYPDIYTREELAQRAKLTEARVQVWFSNRRARWRK
+#=GR 3cmy_A/3-59    PP 89*******************...***********************************8
+1jgg_A/2-58            RRYRTAFTRDQLGRLEKEFYK...ENYVSRPRRCELAAQLNLPESTIKVWFQNRRMKDKR
+#=GR 1jgg_A/2-58    PP 89*******************...*********************************997
+1jgg_B/2-58            RRYRTAFTRDQLGRLEKEFYK...ENYVSRPRRCELAAQLNLPESTIKVWFQNRRMKDKR
+#=GR 1jgg_B/2-58    PP 89*******************...*********************************997
+1p7j_A/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNERAKIKK
+#=GR 1p7j_A/2-58    PP 89*******************...***********************************8
+1p7j_B/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNERAKIKK
+#=GR 1p7j_B/2-58    PP 89*******************...***********************************8
+1p7j_C/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNERAKIKK
+#=GR 1p7j_C/2-58    PP 89*******************...***********************************8
+1p7j_D/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNERAKIKK
+#=GR 1p7j_D/2-58    PP 89*******************...***********************************8
+1p7i_A/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNARAKIKK
+#=GR 1p7i_A/2-58    PP 89*******************...***********************************8
+1p7i_B/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNARAKIKK
+#=GR 1p7i_B/2-58    PP 89*******************...***********************************8
+1p7i_C/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNARAKIKK
+#=GR 1p7i_C/2-58    PP 89*******************...***********************************8
+1p7i_D/2-58            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNARAKIKK
+#=GR 1p7i_D/2-58    PP 89*******************...***********************************8
+1ig7_A/1-57            RKPRTPFTTAQLLALERKFRQ...KQYLSIAERAEFSSSLSLTETQVKIWFQNRRAKAKR
+#=GR 1ig7_A/1-57    PP 89*******************...**********************************97
+2dmt_A/18-74           RRSRTVFTELQLMGLEKRFEK...QKYLSTPDRIDLAESLGLSQLQVKTWYQNRRMKWKK
+#=GR 2dmt_A/18-74   PP 89*******************...***********************************8
+1fjl_A/19-75           RRSRTTFSASQLDELERAFER...TQYPDIYTREELAQRTNLTEARIQVWFQNRRARLRK
+#=GR 1fjl_A/19-75   PP 89*******************...*********************************997
+1fjl_B/19-75           RRSRTTFSASQLDELERAFER...TQYPDIYTREELAQRTNLTEARIQVWFQNRRARLRK
+#=GR 1fjl_B/19-75   PP 89*******************...*********************************997
+1fjl_C/19-75           RRSRTTFSASQLDELERAFER...TQYPDIYTREELAQRTNLTEARIQVWFQNRRARLRK
+#=GR 1fjl_C/19-75   PP 89*******************...*********************************997
+2l7m_P/4-60            RRQRTHFTSQQLQELEATFQR...NHYPDMSTREEIAVWTNLTEARVRVWFKNRRAKWRK
+#=GR 2l7m_P/4-60    PP 89*******************...***********************************8
+2hdd_A/4-60            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFKNKRAKIKK
+#=GR 2hdd_A/4-60    PP 89*******************...***********************************8
+2hdd_B/4-60            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFKNKRAKIKK
+#=GR 2hdd_B/4-60    PP 89*******************...***********************************8
+2cue_A/9-64            -RNRTSFTQEQIEALEKEFER...THYPDVFARERLAAKIDLPEARIQVWFSNRRAKWRR
+#=GR 2cue_A/9-64    PP .99******************...**********************************97
+4xrs_G/1-56            -KPRTIYSSYQLAALQRRFQK...AQYLALPERAELAAQLGLTQTQVKIWFQNRRSKFKK
+#=GR 4xrs_G/1-56    PP .68******************...**********************************98
+4xrs_I/1-56            -KPRTIYSSYQLAALQRRFQK...AQYLALPERAELAAQLGLTQTQVKIWFQNRRSKFKK
+#=GR 4xrs_I/1-56    PP .68******************...**********************************98
+4rdu_A/5-61            RKPRTIYSSFQLAALQRRFQK...TQYLALPERAELAASLGLTQTQVKIWFQNKRSKIKK
+#=GR 4rdu_A/5-61    PP 899******************...***********************************8
+4rdu_D/5-61            RKPRTIYSSFQLAALQRRFQK...TQYLALPERAELAASLGLTQTQVKIWFQNKRSKIKK
+#=GR 4rdu_D/5-61    PP 899******************...***********************************8
+2e1o_A/11-64           ---QVRFSNDQTIELEKKFET...QKYLSPPERKRLAKMLQLSERQVKTWFQNRRAKWRR
+#=GR 2e1o_A/11-64   PP ...679***************...**********************************97
+2l7f_P/4-60            RRQRTHFTSQQLQELEATFQR...NRYPDMSTREEIAVWTNLTEARVRVWFKNRRAKWRK
+#=GR 2l7f_P/4-60    PP 89*******************...***********************************8
+2lkx_A/4-60            RRQRTHFTSQQLQELEATFQR...NRYPDMSTREEIAVWTNLTEARVRVWFKNRRAKWRK
+#=GR 2lkx_A/4-60    PP 89*******************...***********************************8
+2djn_A/8-64            RKPRTIYSSFQLAALQRRFQK...TQYLALPERAELAASLGLTQTQVKIWFQNKRSKIKK
+#=GR 2djn_A/8-64    PP 899******************...***********************************8
+1du0_A/1-56            -RPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFANKRAKIKK
+#=GR 1du0_A/1-56    PP .79******************...***********************************8
+1du0_B/1-56            -RPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFANKRAKIKK
+#=GR 1du0_B/1-56    PP .79******************...***********************************8
+1enh_A/1-54            -RPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNKRAKI--
+#=GR 1enh_A/1-54    PP .79******************...********************************95..
+2dmu_A/8-64            RRHRTIFTDEQLEALENLFQE...TKYPDVGTREQLARKVHLREEKVEVWFKNRRAKWRR
+#=GR 2dmu_A/8-64    PP 89*******************...**********************************97
+3a01_A/18-74           KKPRTSFTRIQVAELEKRFHK...QKYLASAERAALARGLKMTDAQVKTWFQNRRTKWRR
+#=GR 3a01_A/18-74   PP 799******************...**********************************97
+3a01_E/18-74           KKPRTSFTRIQVAELEKRFHK...QKYLASAERAALARGLKMTDAQVKTWFQNRRTKWRR
+#=GR 3a01_E/18-74   PP 799******************...**********************************97
+1ftt_A/3-59            RKRRVLFSQAQVYELERRFKQ...QKYLSAPEREHLASMIHLTPTQVKIWFQNHRYKMKR
+#=GR 1ftt_A/3-59    PP 788999***************...**********************************97
+2dms_A/8-63            RRERTTFTRAQLDVLEALFAK...TRYPDIFMREEVALKINLPESRVQVWFKNRRAKCR-
+#=GR 2dms_A/8-63    PP 89*******************...*********************************98.
+3rkq_A/3-58            RKPRVLFSQAQVYELERRFKQ...QRYLSAPERDQLASVLKLTSTQVKIWFQNRRYKSK-
+#=GR 3rkq_A/3-58    PP 899******************...*********************************98.
+3rkq_B/3-58            RKPRVLFSQAQVYELERRFKQ...QRYLSAPERDQLASVLKLTSTQVKIWFQNRRYKSK-
+#=GR 3rkq_B/3-58    PP 899******************...*********************************98.
+1ztr_A/4-60            KRPRTAFSSEQLARAKREFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNKRAKIRR
+#=GR 1ztr_A/4-60    PP 89*******************...*********************************996
+2hos_A/5-61            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQVKGWFKNMRAKIKK
+#=GR 2hos_A/5-61    PP 89*******************...***********************************8
+2hos_B/5-61            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQVKGWFKNMRAKIKK
+#=GR 2hos_B/5-61    PP 89*******************...***********************************8
+2hot_A/5-61            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQVKGWFKNMRAKIKK
+#=GR 2hot_A/5-61    PP 89*******************...***********************************8
+2hot_B/5-61            KRPRTAFSSEQLARLKREFNE...NRYLTERRRQQLSSELGLNEAQVKGWFKNMRAKIKK
+#=GR 2hot_B/5-61    PP 89*******************...***********************************8
+2l9r_A/9-61            ----SHMSHTQVIELERKFSH...QKYLSAPERAHLAKNLKLTETQVKIWFQNRRYKTKR
+#=GR 2l9r_A/9-61    PP ....578999***********...**********************************97
+4s0h_B/1-53            ---RVLFSQAQVYELERRFKQ...QRYLSAPERDQLASVLKLTSTQVKIWFQNRRYKSK-
+#=GR 4s0h_B/1-53    PP ...6789**************...*********************************98.
+4s0h_F/1-53            ---RVLFSQAQVYELERRFKQ...QRYLSAPERDQLASVLKLTSTQVKIWFQNRRYKSK-
+#=GR 4s0h_F/1-53    PP ...6789**************...*********************************98.
+1nk2_P/10-66           RKRRVLFTKAQTYELERRFRQ...QRYLSAPEREHLASLIRLTPTQVKIWFQNHRYKTKR
+#=GR 1nk2_P/10-66   PP 789999***************...**********************************97
+1nk3_P/10-66           RKRRVLFTKAQTYELERRFRQ...QRYLSAPEREHLASLIRLTPTQVKIWFQNHRYKTKR
+#=GR 1nk3_P/10-66   PP 789999***************...**********************************97
+1vnd_A/10-66           RKRRVLFTKAQTYELERRFRQ...QRYLSAPEREHLASLIRLTPTQVKIWFQNHRYKTKR
+#=GR 1vnd_A/10-66   PP 789999***************...**********************************97
+5flv_A/9-65            RKPRVLFSQAQVYELERRFKQ...QRYLSAPERDQLASVLKLTSTQVKIWFQNRRYKSKR
+#=GR 5flv_A/9-65    PP 799******************...*********************************996
+5flv_E/9-65            RKPRVLFSQAQVYELERRFKQ...QRYLSAPERDQLASVLKLTSTQVKIWFQNRRYKSKR
+#=GR 5flv_E/9-65    PP 799******************...*********************************996
+5flv_I/9-65            RKPRVLFSQAQVYELERRFKQ...QRYLSAPERDQLASVLKLTSTQVKIWFQNRRYKSKR
+#=GR 5flv_I/9-65    PP 799******************...*********************************996
+5flv_M/9-65            RKPRVLFSQAQVYELERRFKQ...QRYLSAPERDQLASVLKLTSTQVKIWFQNRRYKSKR
+#=GR 5flv_M/9-65    PP 799******************...*********************************996
+2k40_A/2-58            RRPRTAFTQNQIEVLENVFRV...NCYPGIDILEDLAQKLNLELDRIQIWFQNRRAKLKR
+#=GR 2k40_A/2-58    PP 89*******************...**********************************97
+3a03_A/2-54            ----TSFSRSQVLELERRFLR...QKYLASAERAALAKALRMTDAQVKTWFQNRRTKWRR
+#=GR 3a03_A/2-54    PP ....78***************...**********************************97
+2mgq_A/6-61            RRERTTYSRQQLEILETLFNE...TQYPDVFARERVADQIRLQESRIQVWFKNRRAKYR-
+#=GR 2mgq_A/6-61    PP 89*******************...*********************************97.
+2ld5_A/6-62            RKKRVPYTKVQLKELEREYAT...NKFITKDKRRRISATTNLSERQVTIWFQNRRVKEKK
+#=GR 2ld5_A/6-62    PP 89*******************...**********************************98
+2l7z_A/8-64            RKKRVPYTKVQLKELEREYAT...NKFITKDKRRRISATTNLSERQVTIWFQNRRVKEKK
+#=GR 2l7z_A/8-64    PP 89*******************...**********************************98
+5eg0_B/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5eg0_B/1-57    PP 89*******************...**********************************98
+5ef6_A/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5ef6_A/1-57    PP 89*******************...**********************************98
+5ef6_B/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5ef6_B/1-57    PP 89*******************...**********************************98
+5ef6_G/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5ef6_G/1-57    PP 89*******************...**********************************98
+5ef6_J/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5ef6_J/1-57    PP 89*******************...**********************************98
+5eea_A/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5eea_A/1-57    PP 89*******************...**********************************98
+5eea_B/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5eea_B/1-57    PP 89*******************...**********************************98
+5eea_G/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5eea_G/1-57    PP 89*******************...**********************************98
+5eea_J/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5eea_J/1-57    PP 89*******************...**********************************98
+5ego_B/1-57            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5ego_B/1-57    PP 89*******************...**********************************98
+4qtr_A/3-59            KRPRTAFSEEQKKALDLAFYF...DRYLTPEWRRYLSQRLGLNEAQIKIWFQNKRAKIKK
+#=GR 4qtr_A/3-59    PP 89*******************...***********************************8
+4qtr_B/3-59            KRPRTAFSEEQKKALDLAFYF...DRYLTPEWRRYLSQRLGLNEAQIKIWFQNKRAKIKK
+#=GR 4qtr_B/3-59    PP 89*******************...***********************************8
+4qtr_C/3-59            KRPRTAFSEEQKKALDLAFYF...DRYLTPEWRRYLSQRLGLNEAQIKIWFQNKRAKIKK
+#=GR 4qtr_C/3-59    PP 89*******************...***********************************8
+4qtr_D/3-59            KRPRTAFSEEQKKALDLAFYF...DRYLTPEWRRYLSQRLGLNEAQIKIWFQNKRAKIKK
+#=GR 4qtr_D/3-59    PP 89*******************...***********************************8
+2cra_A/8-64            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 2cra_A/8-64    PP 89*******************...**********************************98
+5edn_A/9-65            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5edn_A/9-65    PP 89*******************...**********************************98
+5edn_B/9-65            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5edn_B/9-65    PP 89*******************...**********************************98
+5edn_G/9-65            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5edn_G/9-65    PP 89*******************...**********************************98
+5edn_J/9-65            RKKRIPYSKGQLRELEREYAA...NKFITKDKRRKISAATSLSERQITIWFQNRRVKEKK
+#=GR 5edn_J/9-65    PP 89*******************...**********************************98
+1qry_A/13-69           RKRRVLFTKAQTYELERRFRQ...QRYLSAPEREHLTSLIRLTPTQVKIWFQNHRYKTKR
+#=GR 1qry_A/13-69   PP 789999***************...**********************************97
+2vi6_A/5-60            -KMRTVFSQAQLCALKDRFQK...QKYLSLQQMQELSSILNLSYKQVKTWFQNQRMKCKR
+#=GR 2vi6_A/5-60    PP .78******************...**********************************97
+2vi6_B/5-60            -KMRTVFSQAQLCALKDRFQK...QKYLSLQQMQELSSILNLSYKQVKTWFQNQRMKCKR
+#=GR 2vi6_B/5-60    PP .78******************...**********************************97
+2vi6_C/5-60            -KMRTVFSQAQLCALKDRFQK...QKYLSLQQMQELSSILNLSYKQVKTWFQNQRMKCKR
+#=GR 2vi6_C/5-60    PP .78******************...**********************************97
+2vi6_D/5-60            -KMRTVFSQAQLCALKDRFQK...QKYLSLQQMQELSSILNLSYKQVKTWFQNQRMKCKR
+#=GR 2vi6_D/5-60    PP .78******************...**********************************97
+2vi6_E/5-60            -KMRTVFSQAQLCALKDRFQK...QKYLSLQQMQELSSILNLSYKQVKTWFQNQRMKCKR
+#=GR 2vi6_E/5-60    PP .78******************...**********************************97
+2vi6_F/5-60            -KMRTVFSQAQLCALKDRFQK...QKYLSLQQMQELSSILNLSYKQVKTWFQNQRMKCKR
+#=GR 2vi6_F/5-60    PP .78******************...**********************************97
+2vi6_G/5-60            -KMRTVFSQAQLCALKDRFQK...QKYLSLQQMQELSSILNLSYKQVKTWFQNQRMKCKR
+#=GR 2vi6_G/5-60    PP .78******************...**********************************97
+2vi6_H/5-60            -KMRTVFSQAQLCALKDRFQK...QKYLSLQQMQELSSILNLSYKQVKTWFQNQRMKCKR
+#=GR 2vi6_H/5-60    PP .78******************...**********************************97
+1zq3_P/3-58            RRTRTTFTSSQIAELEQHFLQ...GRYLTAPRLADLSAKLALGTAQVKIWFKNRRRRHK-
+#=GR 1zq3_P/3-58    PP 89*******************...********************************998.
+5hod_A/3-59            KRPRTTITAKQLETLKNAYKN...SPKPARHVREQLSSETGLDMRVVQVWFQNRRAKEKR
+#=GR 5hod_A/3-59    PP 89*******************...**********************************97
+5hod_D/3-59            KRPRTTITAKQLETLKNAYKN...SPKPARHVREQLSSETGLDMRVVQVWFQNRRAKEKR
+#=GR 5hod_D/3-59    PP 89*******************...**********************************97
+4rbo_A/5-60            -KTRTVFSSTQLCVLNDRFQR...QKYLSLQQMQELSNILNLSYKQVKTWFQNQRMKSKR
+#=GR 4rbo_A/5-60    PP .89******************...**********************************97
+4rbo_D/5-60            -KTRTVFSSTQLCVLNDRFQR...QKYLSLQQMQELSNILNLSYKQVKTWFQNQRMKSKR
+#=GR 4rbo_D/5-60    PP .89******************...**********************************97
+2kt0_A/24-79           -KTRTVFSSTQLCVLNDRFQR...QKYLSLQQMQELSNILNLSYKQVKTWFQNQRMKSKR
+#=GR 2kt0_A/24-79   PP .89******************...**********************************97
+2p81_A/3-43            ----------------REFNE...NRYLTERRRQQLSSELGLNEAQIKIWFQNKRAKIKK
+#=GR 2p81_A/3-43    PP ................89***...***********************************8
+2da2_A/8-64            RSSRTRFTDYQLRVLQDFFDA...NAYPKDDEFEQLSNLLNLPTRVIVVWFQNARQKARK
+#=GR 2da2_A/8-64    PP 679******************...**********************************97
+2dmq_A/8-64            KRMRTSFKHHQLRTMKSYFAI...NHNPDAKDLKQLAQKTGLTKRVLQVWFQNARAKFRR
+#=GR 2dmq_A/8-64    PP 799******************...*********************************996
+2da3_A/18-74           KRLRTTITPEQLEILYQKYLL...DSNPTRKMLDHIAHEVGLKKRVVQVWFQNTRARERK
+#=GR 2da3_A/18-74   PP 799******************...*********************************997
+1f43_A/9-61            ---KSSISPQARAFLEQVFRR...KQSLNSKEKEEVAKKCGITPLQVRVWFINKRMRSK-
+#=GR 1f43_A/9-61    PP ...56677888889*******...*********************************98.
+1yrn_A/9-61            ---KSSISPQARAFLEQVFRR...KQSLNSKEKEEVAKKCGITPLQVRVWFINKRMRSK-
+#=GR 1yrn_A/9-61    PP ...56677888889*******...*********************************98.
+1bw5_A/5-60            -RVRTVLNEKQLHTLRTCYAA...NPRPDALMKEQLVEMTGLSPRVIRVWFQNKRCKDKK
+#=GR 1bw5_A/5-60    PP .679*****************...**********************************98
+1akh_A/9-61            ---KSSISPQARAFLEEVFRR...KQSLNSKEKEEVAKKCGITPLQVRVWFINKRMRSK-
+#=GR 1akh_A/9-61    PP ...56677888889*******...*********************************98.
+1le8_A/5-53            -------SPQARAFLEQVFRR...KQSLNSKEKEEVAKKCGITPLQVRVWFINKRMRSK-
+#=GR 1le8_A/5-53    PP .......5666778*******...*********************************98.
+1b8i_B/2-61            RRKRRNFSKQASEILNEYFYShlsNPYPSEEAKEELARKCGITVSQVSNWFGNKRIRYKK
+#=GR 1b8i_B/2-61    PP 89*****************754559*********************************98
+2r5y_B/2-61            RRKRRNFSKQASEILNEYFYShlsNPYPSEEAKEELARKCGITVSQVSNWFGNKRIRYKK
+#=GR 2r5y_B/2-61    PP 89*****************754559*********************************98
+2r5z_B/2-61            RRKRRNFSKQASEILNEYFYShlsNPYPSEEAKEELARKCGITVSQVSNWFGNKRIRYKK
+#=GR 2r5z_B/2-61    PP 89*****************754559*********************************98
+1puf_B/2-61            RRKRRNFNKQATEILNEYFYShlsNPYPSEEAKEELAKKCGITVSQVSNWFGNKRIRYKK
+#=GR 1puf_B/2-61    PP 89*****************754559*********************************98
+4cyc_B/3-62            RRKRRNFSKQASEILNEYFYShlsNPYPSEEAKEELARKCGITVSQVSNWFGNKRIRYKK
+#=GR 4cyc_B/3-62    PP 89*****************754559*********************************98
+4uus_B/3-62            RRKRRNFSKQASEILNEYFYShlsNPYPSEEAKEELARKCGITVSQVSNWFGNKRIRYKK
+#=GR 4uus_B/3-62    PP 89*****************754559*********************************98
+4uus_F/3-62            RRKRRNFSKQASEILNEYFYShlsNPYPSEEAKEELARKCGITVSQVSNWFGNKRIRYKK
+#=GR 4uus_F/3-62    PP 89*****************754559*********************************98
+1b72_B/2-61            RRKRRNFNKQATEILNEYFYShlsNPYPSEEAKEELAKKCGITVSQVSNWFGNKRIRYKK
+#=GR 1b72_B/2-61    PP 89*****************754559*********************************98
+1pog_A/8-64            RKKRTSIETNIRVALEKSFLE...NQKPTSEEITMIADQLNMEKEVIRVWFCNRRQKEKR
+#=GR 1pog_A/8-64    PP 7899999999999********...**********************************97
+1lfu_P/3-62            RRKRRNFNKQATEILNEYFYShlsNPYPSEEAKEELAKKSGITVSQVSNWFGNKRIRYKK
+#=GR 1lfu_P/3-62    PP 89*****************754559*********************************98
+3d1n_I/94-149          RKRRTSFTPQAIEALNAYFEK...NPLPTGQEITEMAKELNYDREVVRVWFSNRRQTLK-
+#=GR 3d1n_I/94-149  PP 89*******************...*******************************9777.
+3d1n_J/94-149          RKRRTSFTPQAIEALNAYFEK...NPLPTGQEITEMAKELNYDREVVRVWFSNRRQTLK-
+#=GR 3d1n_J/94-149  PP 89*******************...*******************************9777.
+3d1n_K/94-149          RKRRTSFTPQAIEALNAYFEK...NPLPTGQEITEMAKELNYDREVVRVWFSNRRQTLK-
+#=GR 3d1n_K/94-149  PP 89*******************...*******************************9777.
+3d1n_L/94-149          RKRRTSFTPQAIEALNAYFEK...NPLPTGQEITEMAKELNYDREVVRVWFSNRRQTLK-
+#=GR 3d1n_L/94-149  PP 89*******************...*******************************9777.
+3d1n_M/94-149          RKRRTSFTPQAIEALNAYFEK...NPLPTGQEITEMAKELNYDREVVRVWFSNRRQTLK-
+#=GR 3d1n_M/94-149  PP 89*******************...*******************************9777.
+3d1n_N/94-149          RKRRTSFTPQAIEALNAYFEK...NPLPTGQEITEMAKELNYDREVVRVWFSNRRQTLK-
+#=GR 3d1n_N/94-149  PP 89*******************...*******************************9777.
+3d1n_O/94-149          RKRRTSFTPQAIEALNAYFEK...NPLPTGQEITEMAKELNYDREVVRVWFSNRRQTLK-
+#=GR 3d1n_O/94-149  PP 89*******************...*******************************9777.
+3d1n_P/94-149          RKRRTSFTPQAIEALNAYFEK...NPLPTGQEITEMAKELNYDREVVRVWFSNRRQTLK-
+#=GR 3d1n_P/94-149  PP 89*******************...*******************************9777.
+1au7_A/88-144          RKRRTTISIAAKDALERHFGE...HSKPSSQEIMRMAEELNLEKEVVRVWFCNRRQREKR
+#=GR 1au7_A/88-144  PP 899******************...*********************************996
+1au7_B/88-144          RKRRTTISIAAKDALERHFGE...HSKPSSQEIMRMAEELNLEKEVVRVWFCNRRQREKR
+#=GR 1au7_B/88-144  PP 899******************...*********************************996
+1ocp_A/9-65            KRKRTSIENRVRWSLETMFLK...CPKPSLQQITHIANQLGLEKDVVRVWFCNRRQKGKR
+#=GR 1ocp_A/9-65    PP 799******************...*********************************986
+1mh3_A/373-421         -------SPQARAFLEQVFRR...KQSLNSKEKEEVAKKCGITPLQVRVWFINKRMRSK-
+#=GR 1mh3_A/373-421 PP .......5666778*******...*********************************88.
+1mh4_A/373-421         -------SPQARAFLEQVFRR...KQSLNSKEKEEVAKKCGITPLQVRVWFINKRMRSK-
+#=GR 1mh4_A/373-421 PP .......5666778*******...*********************************88.
+5wc9_A/94-150          RKRRTTISIAAKDALERHFGE...QNKPSSQEIMRMAEELNLEKEVVRVWFCNRRQREKR
+#=GR 5wc9_A/94-150  PP 899******************...*********************************996
+5wc9_B/94-150          RKRRTTISIAAKDALERHFGE...QNKPSSQEIMRMAEELNLEKEVVRVWFCNRRQREKR
+#=GR 5wc9_B/94-150  PP 899******************...*********************************996
+5wc9_E/94-150          RKRRTTISIAAKDALERHFGE...QNKPSSQEIMRMAEELNLEKEVVRVWFCNRRQREKR
+#=GR 5wc9_E/94-150  PP 899******************...*********************************996
+5wc9_F/94-150          RKRRTTISIAAKDALERHFGE...QNKPSSQEIMRMAEELNLEKEVVRVWFCNRRQREKR
+#=GR 5wc9_F/94-150  PP 899******************...*********************************996
+1oct_C/97-153          RKKRTSIETNIRVALEKSFLE...NQKPTSEEITMIADQLNMEKEVIRVWFCNRRQKEKR
+#=GR 1oct_C/97-153  PP 7999***99999*********...**********************************97
+1cqt_A/104-160         RKKRTSIETNIRVALEKSFLE...NQKPTSEEITMIADQLNMEKEVIRVWFCNRRQKEKR
+#=GR 1cqt_A/104-160 PP 7999***99999*********...**********************************97
+1cqt_B/104-160         RKKRTSIETNIRVALEKSFLE...NQKPTSEEITMIADQLNMEKEVIRVWFCNRRQKEKR
+#=GR 1cqt_B/104-160 PP 7999***99999*********...**********************************97
+1o4x_A/105-161         RKKRTSIETNIRVALEKSFLE...NQKPTSEEITMIADQLNMEKEVIRVWFCNRRQKEKR
+#=GR 1o4x_A/105-161 PP 7999***99999*********...**********************************97
+1hdp_A/2-58            RKKRTSIETNVRFALEKSFLA...NQKPTSEEILLIAEQLHMEKEVIRVWFCNRRQKEKR
+#=GR 1hdp_A/2-58    PP 899******************...**********************************97
+1gt0_C/101-157         RKKRTSIETNIRVALEKSFLE...NQKPTSEEITMIADQLNMEKEVIRVWFSNRRQKEKR
+#=GR 1gt0_C/101-157 PP 7999***99999*********...**********************************97
+1hf0_A/101-157         RKKRTSIETNIRVALEKSFLE...NQKPTSEEITMIADQLNMEKEVIRVWFSNRRQKEKR
+#=GR 1hf0_A/101-157 PP 7999***99999*********...**********************************97
+1hf0_B/101-157         RKKRTSIETNIRVALEKSFLE...NQKPTSEEITMIADQLNMEKEVIRVWFSNRRQKEKR
+#=GR 1hf0_B/101-157 PP 7999***99999*********...**********************************97
+2da1_A/8-63            KRPRTRITDDQLRVLRQYFDI...NNSPSEEQIKEMADKSGLPQKVIKHWFRNTLFKER-
+#=GR 2da1_A/8-63    PP 89*******************...*****************************877766.
+1e3o_C/102-158         RKKRTSIETNIRVALEKSFME...NQKPTSEDITLIAEQLNMEKEVIRVWFSNRRQKEKR
+#=GR 1e3o_C/102-158 PP 7999***99999*********...**********************************97
+3l1p_A/97-153          KRKRTSIENRVRWSLETMFLK...SPKPSLQQITHIANQLGLEKDVVRVWFSNRRQKGKR
+#=GR 3l1p_A/97-153  PP 799******************...*********************************986
+3l1p_B/97-153          KRKRTSIENRVRWSLETMFLK...SPKPSLQQITHIANQLGLEKDVVRVWFSNRRQKGKR
+#=GR 3l1p_B/97-153  PP 799******************...*********************************986
+1du6_A/10-63           ------MNKQATEILNEYFYShlsNPYPSEEAKEELAKKCGITVSQVSNWFGNKRIRYKK
+#=GR 1du6_A/10-63   PP ......56677788888886544499********************************98
+4egc_A/507-550         ------------GVLREWYAH...NPYPSPREKRELAEATGLTTTQVSNWFKNRRQRDR-
+#=GR 4egc_A/507-550 PP ............568999***...********************************987.
+2xsd_C/100-156         RKKRTSIEVGVKGALESHFLK...CPKPSAHEITGLADSLQLEKEVVRVWFCNRRQKEKR
+#=GR 2xsd_C/100-156 PP 67888888888889*******...**********************************97
+2mg4_A/3-52            KRPRTEFSEEQKKALDLAFYF...DRRLTPEWRRYLSQRLGLNEEQIERWFRR-------
+#=GR 2mg4_A/3-52    PP 89*******************...***************************74.......
+2mg4_B/3-52            KRPRTEFSEEQKKALDLAFYF...DRRLTPEWRRYLSQRLGLNEEQIERWFRR-------
+#=GR 2mg4_B/3-52    PP 89*******************...***************************74.......
+4j19_A/38-73           --SRFTWRKECLAVMESYFNE...NQYPDEAKREEIANACN-------------------
+#=GR 4j19_A/38-73   PP ..5778889999*********...*************9986...................
+4j19_A/82-107          ---------------------...----------KLSDLERVTSLKVYNWFANRRKEIKR
+#=GR 4j19_A/82-107  PP ..................................677777789999*********99886
+4j19_B/38-73           --SRFTWRKECLAVMESYFNE...NQYPDEAKREEIANACN-------------------
+#=GR 4j19_B/38-73   PP ..5778889999*********...*************9986...................
+4j19_B/82-107          ---------------------...----------KLSDLERVTSLKVYNWFANRRKEIKR
+#=GR 4j19_B/82-107  PP ..................................677777789999*********99886
+2cuf_A/10-45           --SRFTWRKECLAVMESYFNE...NQYPDEAKREEIANACN-------------------
+#=GR 2cuf_A/10-45   PP ..6778889999*********...*************9986...................
+2cuf_A/54-79           ---------------------...----------KLSDLERVTSLKVYNWFANRRKEIKR
+#=GR 2cuf_A/54-79   PP ..................................677777889999*********99886
+2dn0_A/14-64           -----KKSHEQLSALKGSFCR...NQFPGQSEVEHLTKVTGLSTREVRKWFSDRRYHCR-
+#=GR 2dn0_A/14-64   PP .....6789************...*******************************9887.
+1uhs_A/7-59            -----TMTEDQVEILEYNFNK..vNKHPDPTTLCLIAAEAGLTEEQTQKWFKQRLAEWRR
+#=GR 1uhs_A/7-59    PP .....789***********99..899*******************************996
+1k61_A/3-57            ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1k61_A/3-57    PP ....68*************9755579*******************************99.
+1k61_B/3-57            ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1k61_B/3-57    PP ....68*************9755579*******************************99.
+1k61_C/3-57            ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1k61_C/3-57    PP ....68*************9755579*******************************99.
+1k61_D/3-57            ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1k61_D/3-57    PP ....68*************9755579*******************************99.
+1akh_B/7-61            ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1akh_B/7-61    PP ....68*************9755579*******************************99.
+1apl_C/7-61            ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1apl_C/7-61    PP ....68*************9755579*******************************99.
+1apl_D/7-61            ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1apl_D/7-61    PP ....68*************9755579*******************************99.
+1yrn_B/7-61            ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1yrn_B/7-61    PP ....68*************9755579*******************************99.
+2da5_A/14-61           ------RAPEQLRALESSFAQ...NPLPLDEELDRLRSETKMTRREIDSWFSERRKK---
+#=GR 2da5_A/14-61   PP ......5689***********...*******************************99...
+1mnm_C/32-86           ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1mnm_C/32-86   PP ....68*************9755579*******************************99.
+1mnm_D/32-86           ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVSNRRRKEK-
+#=GR 1mnm_D/32-86   PP ....68*************9755579*******************************99.
+3nau_A/9-60            ----RKKTKEQIAHLKASFLQ...SQFPDDAEVYRLIEVTGLARSEIKKWFSDHRYRCQ-
+#=GR 3nau_A/9-60    PP ....6789*************...********************************986.
+3nau_B/9-60            ----RKKTKEQIAHLKASFLQ...SQFPDDAEVYRLIEVTGLARSEIKKWFSDHRYRCQ-
+#=GR 3nau_B/9-60    PP ....6789*************...********************************986.
+4ndl_A/22-66           ----TEFSEEQKKALDLAFYF...DRRLTPEWRRYLSQRLGLNEEQIERWFR--------
+#=GR 4ndl_A/22-66   PP ....89***************...***************************7........
+4ndl_B/22-66           ----TEFSEEQKKALDLAFYF...DRRLTPEWRRYLSQRLGLNEEQIERWFR--------
+#=GR 4ndl_B/22-66   PP ....89***************...***************************7........
+4ndl_C/22-66           ----TEFSEEQKKALDLAFYF...DRRLTPEWRRYLSQRLGLNEEQIERWFR--------
+#=GR 4ndl_C/22-66   PP ....89***************...***************************7........
+2hi3_A/10-60           -------TEDQVEILEYNFNK..vNKHPDPTTLCLIAAEAGLTEEQTQKWFKQRLAEWRR
+#=GR 2hi3_A/10-60   PP .......789*********99..899*******************************996
+2nd6_A/1-17            ---------------------...-------------------DRQIKIWFQNRRMKWKK
+#=GR 2nd6_A/1-17    PP ...........................................59**************8
+2nd7_A/1-17            ---------------------...-------------------DRQIKIWFQNRRMKWKK
+#=GR 2nd7_A/1-17    PP ...........................................59**************8
+2nd8_A/1-17            ---------------------...-------------------DRQIKIWFQNRRMKWKK
+#=GR 2nd8_A/1-17    PP ...........................................59**************8
+3nar_A/31-81           -----KKTPEQLHMLKSAFVR...TQWPSPEEYDKLAKESGLARTDIVSWFGDTRYAWK-
+#=GR 3nar_A/31-81   PP .....5799************...**********************************9.
+3nar_B/31-81           -----KKTPEQLHMLKSAFVR...TQWPSPEEYDKLAKESGLARTDIVSWFGDTRYAWK-
+#=GR 3nar_B/31-81   PP .....5799************...**********************************9.
+5eg0_A/19-52           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 5eg0_A/19-52   PP ....................5...89***************************9987...
+4xrs_A/18-51           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 4xrs_A/18-51   PP ....................5...89***************************9987...
+4xrs_B/18-51           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 4xrs_B/18-51   PP ....................5...89***************************9987...
+2cqx_A/22-65           -------------TLEKVFVS..vTKYPDEKRLKGLSKQLDWSVRKIQCWFRHRRNQDK-
+#=GR 2cqx_A/22-65   PP .............79****76..69******************************9987.
+4zn8_A/1-46            ----TEFSEEQKRTLDLLFLF...DRRMTEERRRWLSQRLGLNEEQIERWFRR-------
+#=GR 4zn8_A/1-46    PP ....689**************...***************************74.......
+4zn8_B/1-46            ----TEFSEEQKRTLDLLFLF...DRRMTEERRRWLSQRLGLNEEQIERWFRR-------
+#=GR 4zn8_B/1-46    PP ....689**************...***************************74.......
+4zn8_C/1-46            ----TEFSEEQKRTLDLLFLF...DRRMTEERRRWLSQRLGLNEEQIERWFRR-------
+#=GR 4zn8_C/1-46    PP ....689**************...***************************74.......
+4zn8_D/1-46            ----TEFSEEQKRTLDLLFLF...DRRMTEERRRWLSQRLGLNEEQIERWFRR-------
+#=GR 4zn8_D/1-46    PP ....689**************...***************************74.......
+5ego_A/19-52           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 5ego_A/19-52   PP ....................5...89***************************9987...
+5bng_A/18-51           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 5bng_A/18-51   PP ....................5...89***************************9987...
+5bng_B/18-51           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 5bng_B/18-51   PP ....................5...89***************************9987...
+3k2a_A/22-55           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 3k2a_A/22-55   PP ....................5...89***************************9987...
+3k2a_B/22-55           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 3k2a_B/22-55   PP ....................5...89***************************9987...
+1x2n_A/32-64           ---------------------...HPYPTEDEKKQIAAQTNLTLLQVNNWFINARRR---
+#=GR 1x2n_A/32-64   PP ........................79***************************9987...
+4xrm_A/22-55           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 4xrm_A/22-55   PP ....................5...89***************************9987...
+4xrm_B/22-55           --------------------T...HPYPSEEQKKQLAQDTGLTILQVNNWFINARRR---
+#=GR 4xrm_B/22-55   PP ....................5...89***************************9987...
+2ly9_A/10-62           ---RAKKTKEQLAELKVSYLK...NQFPHDSEIIRLMKITGLTKGEIKKWFSDTRYNQR-
+#=GR 2ly9_A/10-62   PP ...7789**************...****************************9998776.
+2d5v_A/98-151          KKPRLVFTDVQRRTLHAIFKE...NKRPSKELQITISQQLGLELSTVSNFFMNARRR---
+#=GR 2d5v_A/98-151  PP 799******************...*****************************9987...
+2d5v_B/98-151          KKPRLVFTDVQRRTLHAIFKE...NKRPSKELQITISQQLGLELSTVSNFFMNARRR---
+#=GR 2d5v_B/98-151  PP 799******************...*****************************9987...
+1le8_B/7-61            ----HRFTKENVRILESWFAKnieNPYLDTKGLENLMKNTSLSRIQIKNWVAARRAKEK-
+#=GR 1le8_B/7-61    PP ....68*************9755579*******************************99.
+2dmp_A/19-65           -----EKTQGQVKILEDSFLK...SSFPTQAELDRLRVETKLSRREIDSWFSERR-----
+#=GR 2dmp_A/19-65   PP .....57999***********...******************************9.....
+1kz0_A/1-16            ---------------------...--------------------RQIKIWFQNRRMKWKK
+#=GR 1kz0_A/1-16    PP ............................................8**************8
+1omq_A/1-16            ---------------------...--------------------RQIKIWFQNRRMKWKK
+#=GR 1omq_A/1-16    PP ............................................8**************8
+1s7e_A/96-147          KKPRLVFTDVQRRTLHAIFKE...NKRPSKELQITISQQLGLELSTVSNFFMNAR-----
+#=GR 1s7e_A/96-147  PP 799******************...***************************9988.....
+2dmn_A/30-64           -------------------RF...KAYPSEEEKQMLSEKTNLSLLQISNWFINARRR---
+#=GR 2dmn_A/30-64   PP ...................57...89***************************9987...
+4ndj_A/2-46            ----TEFSEEQKKALDLAFYF...DRRLTEEWRRYLSQRLGLNEEQIERWFR--------
+#=GR 4ndj_A/2-46    PP ....78***************...***************************7........
+1x2m_A/13-57           ------------AILEKVFTA..iTKHPDEKRLEGLSKQLDWDVRSIQRWFRQRRNQEK-
+#=GR 1x2m_A/13-57   PP ............57*****98..799*****************************9987.
+2lk2_A/27-62           ------------------HRY...NAYPSEQEKALLSQQTHLSTLQVCNWFINARRR---
+#=GR 2lk2_A/27-62   PP ..................567...99***************************9987...
+2nzz_A/1-16            ---------------------...--------------------RQIKIWFQNRRMKWKK
+#=GR 2nzz_A/1-16    PP ............................................8**************8
+2o00_A/1-16            ---------------------...--------------------RQIKIWFQNRRMKWKK
+#=GR 2o00_A/1-16    PP ............................................8**************8
+2ecb_A/17-63           -----EKTAEQLRVLQASFLN...SSVLTDEELNRLRAQTKLTRREIDAWFTEKK-----
+#=GR 2ecb_A/17-63   PP .....5799************...***************************9775.....
+4ndk_A/2-46            ----TEWSEEQKKALDLAFYF...DRRLTPEWRRYLSQRLGLNEEQIERWFR--------
+#=GR 4ndk_A/2-46    PP ....56899************...***************************7........
+4ndk_B/2-46            ----TEWSEEQKKALDLAFYF...DRRLTPEWRRYLSQRLGLNEEQIERWFR--------
+#=GR 4ndk_B/2-46    PP ....56899************...***************************7........
+1kz2_A/1-16            ---------------------...--------------------RQIKIFFQNRRMKFKK
+#=GR 1kz2_A/1-16    PP ............................................8**************8
+2da6_A/66-80           ---------------------...-----------------VTEVRVYNWFANRRK----
+#=GR 2da6_A/66-80   PP .........................................5899**********5....
+2ecc_A/9-59            -----RKTKEQLAILKSFFLQ...CQWARREDYQKLEQITGLPRPEIIQWFGDTRYALK-
+#=GR 2ecc_A/9-59    PP .....789*************...***************************99998766.
+1lfb_A/69-83           ---------------------...-----------------VTEVRVYNWFANRRK----
+#=GR 1lfb_A/69-83   PP .........................................6899**********5....
+2lfb_A/70-84           ---------------------...-----------------VTEVRVYNWFANRRK----
+#=GR 2lfb_A/70-84   PP .........................................6899**********5....
+1wi3_A/9-64            -RSRTKISLEALGILQSFIHD..vGLYPDQEAIHTLSAQLDLPKHTIIKFFQNQRYHVK-
+#=GR 1wi3_A/9-64    PP .67888888888888887776..356*****************************9887.
+2jt9_B/1-16            ---------------------...--------------------RQIKIAFQNRRLKAKK
+#=GR 2jt9_B/1-16    PP ............................................8**************8
+#=GC PP_cons           899*99**************9...**********************************97
+#=GC RF                xxxxxxxxxxxxxxxxxxxxx...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//

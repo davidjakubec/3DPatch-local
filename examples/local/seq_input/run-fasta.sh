@@ -8,4 +8,4 @@ phmmer -o /dev/null -A phmmer_results.sto $fasta_file $phmmer_database_file
 hmmbuild -o /dev/null --amino phmmer_results.hmm phmmer_results.sto
 hmmsearch -o /dev/null -A hmmsearch_results.sto --domtblout hmmsearch_results.out phmmer_results.hmm $hmmsearch_database_file
 
-python3 run-fasta.py phmmer_results.hmm
+python run-fasta.py phmmer_results.hmm
