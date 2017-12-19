@@ -2,6 +2,8 @@ from sys import argv
 import requests
 import subprocess
 from os import remove as remove_file
+from os import mkdir
+import json
 
 ################################################################################
 
@@ -65,7 +67,7 @@ def write_domains(domains, hmm_name):
 
 def read_color_scale(color_scale_file):
     with open(color_scale_file, encoding = 'UTF-8') as f:
-        color_scale = [i.split() for i in f.read().split('\n') if i]
+        color_scale = [[float(j) for j in i.split()] for i in f.read().split('\n') if i]
     return color_scale
 
 def calculate_domain_information_content_profiles(domains, hmm_information_content_profile):
@@ -117,7 +119,61 @@ def download_and_parse_CIFs(domains):
         structure_residue_schemes[PDB_ID] = structure_residue_scheme
     return structure_residue_schemes
 
+def calculate_domain_color_masks(domains, structure_residue_schemes, color_scale):
+    def calculate_structure_residue_scheme_information_content_profile(chain_ID, seq_start, seq_end, domain_information_content_profile, structure_residue_scheme):
+        structure_residue_scheme_information_content_profile = []
+        chain_residue_index = 1
+        domain_residue_index = 0
+        for residue in structure_residue_scheme:
+            if (residue[0] != chain_ID):
+                structure_residue_scheme_information_content_profile.append('d')
+            else:
+                if ((chain_residue_index >= seq_start) and (chain_residue_index <= seq_end)):
+                    structure_residue_scheme_information_content_profile.append(domain_information_content_profile[domain_residue_index])
+                    domain_residue_index += 1
+                else:
+                    structure_residue_scheme_information_content_profile.append('m')
+                chain_residue_index += 1
+        return structure_residue_scheme_information_content_profile
+    def convert_profile_to_colors(structure_information_content_profile, color_scale):
+        domain_color_mask = ['skipped',]
+        for information_content in structure_information_content_profile:
+            if (information_content == 'd'):
+                color = {'r': 0.839, 'g': 0.910, 'b': 0.976}
+            elif (information_content == 'm'):
+                color = {'r': 0.749, 'g': 0.937, 'b': 0.561}
+            elif (information_content == 'i'):
+                color = {'r': 0.749, 'g': 0.937, 'b': 0.561}
+            else:
+                normalized_information_content = information_content / 6.45311498641968
+                color_index = round(255 * normalized_information_content)
+                color = {'r': color_scale[color_index][0], 'g': color_scale[color_index][1], 'b': color_scale[color_index][2]}
+            domain_color_mask.append(color)
+        return domain_color_mask
+    for domain in domains:
+        PDB_ID = domain[0].split('_')[0]
+        chain_ID = domain[0].split('_')[1]
+        seq_start = int(domain[3])
+        seq_end = int(domain[4])
+        domain_information_content_profile = domain[6]
+        structure_residue_scheme = structure_residue_schemes[PDB_ID]
+        structure_residue_scheme_information_content_profile = calculate_structure_residue_scheme_information_content_profile(chain_ID, seq_start, seq_end, domain_information_content_profile, structure_residue_scheme)
+        structure_information_content_profile = [structure_residue_scheme_information_content_profile[i] for i in range(len(structure_residue_scheme_information_content_profile)) if (structure_residue_scheme[i][1] != '?')]
+        domain_color_mask = convert_profile_to_colors(structure_information_content_profile, color_scale)
+        domain.append(domain_color_mask)
 
+def write_domain_color_masks(domains, hmm_name):
+    try:
+        mkdir(hmm_name)
+    except FileExistsError:
+        pass
+    for domain in domains:
+        chain_ID = domain[0]
+        seq_start = domain[3]
+        seq_end = domain[4]
+        domain_color_mask = domain[7]
+        with open(hmm_name + '/' + chain_ID + '_' + seq_start + '-' + seq_end + '.json', encoding = 'UTF-8', mode = 'w') as f:
+            json.dump({'pdbId': chain_ID.split('_')[0], 'colorMask': domain_color_mask}, f)
 
 ################################################################################
 
@@ -130,8 +186,8 @@ def main(hmm_file, seq_database_file, color_scale_file):
     calculate_domain_information_content_profiles(domains, hmm_information_content_profile)
     structure_residue_schemes = download_and_parse_CIFs(domains)
     color_scale = read_color_scale(color_scale_file)
-
-
+    calculate_domain_color_masks(domains, structure_residue_schemes, color_scale)
+    write_domain_color_masks(domains, hmm_name)
 
 if (__name__ == '__main__'):
     main(argv[1], argv[2], argv[3])
