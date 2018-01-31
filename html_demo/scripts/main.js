@@ -6,7 +6,7 @@ function initialize() {
     if (window.plugin) {
         plugin.destroy();
     }
-    LiteMolCallback();
+    LiteMolWrapper();
     window.plugin = LiteMol.Plugin.create({target: "#litemol", viewportBackground: "#FFFFFF", layoutState: {hideControls: true}});
 }
 
@@ -26,7 +26,7 @@ function drawDomain(reader) {
     var pdbId = domain.pdbId;
     var colorMask = domain.colorMask;
     plugin.destroy();
-    LiteMolCallback(colorMask);
+    LiteMolWrapper(colorMask);
     window.plugin = LiteMol.Plugin.create({target: "#litemol", viewportBackground: "#FFFFFF", layoutState: {hideControls: true}});
     plugin.loadMolecule({id: pdbId, url: "https://www.ebi.ac.uk/pdbe/static/entry/" + pdbId + "_updated.cif", format: "cif"});
 }
