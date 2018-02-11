@@ -34,7 +34,7 @@ def parse_CIF(CIF):
     return structure_residue_scheme
 
 def write_structure_residue_scheme(CIF_file, structure_residue_scheme):
-    with open(CIF_file[:-6] + 'sch', encoding = 'UTF-8', mode = 'w') as f:
+    with open('./schemes/' + CIF_file.split('/')[-1].split('.')[0] + '.sch', encoding = 'UTF-8', mode = 'w') as f:
         for residue in structure_residue_scheme:
             f.write('\t'.join(residue) + '\n')
 

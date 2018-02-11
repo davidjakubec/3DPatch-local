@@ -87,7 +87,7 @@ def write_domain_color_masks(domains, hmm_name, structure_residue_schemes_direct
     except FileExistsError:
         pass
     def read_structure_residue_scheme(PDB_ID, structure_residue_schemes_directory):
-        with open(structure_residue_schemes_directory + PDB_ID[1:3] + '/' + PDB_ID + '.sch', encoding = 'UTF-8') as f:
+        with open(structure_residue_schemes_directory + PDB_ID + '.sch', encoding = 'UTF-8') as f:
             structure_residue_scheme = [i.split('\t') for i in f.read().split('\n') if i]
         return structure_residue_scheme
     def calculate_structure_residue_scheme_information_content_profile(chain_ID, seq_start, seq_end, domain_information_content_profile, structure_residue_scheme):
