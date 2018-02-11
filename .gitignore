@@ -1,2 +1,4 @@
-database/*
+database/PDB_mmCIFs/mmCIF/*
+database/sequence/pdb_seqres_prot.txt
+database/sequence/uniprot_sprot.fasta
 examples/*
