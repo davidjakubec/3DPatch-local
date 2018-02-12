@@ -43,5 +43,5 @@ function drawDomain(reader) {
     plugin.destroy();
     LiteMolWrapper(colorMask);
     window.plugin = LiteMol.Plugin.create({target: "#litemol", viewportBackground: "#FFFFFF", layoutState: {hideControls: true}});
-    plugin.loadMolecule({id: pdbId, url: "https://www.ebi.ac.uk/pdbe/static/entry/" + pdbId + ".cif", format: "cif"});
+    plugin.loadMolecule({id: pdbId, url: "https://www.ebi.ac.uk/pdbe/entry-files/download/" + pdbId + ".cif", format: "cif"});
 }

@@ -1,3 +1,4 @@
+code/__pycache__/*
 database/PDB_mmCIFs/mmCIF/*
 database/PDB_mmCIFs/schemes/*
 database/sequence/pdb_seqres_prot.txt
