@@ -1,5 +1,6 @@
 from sys import argv
-import requests
+from sys import path as sys_path
+#import requests
 import subprocess
 from os import remove as remove_file
 from os import mkdir
@@ -13,21 +14,32 @@ def read_hmm(hmm_file):
     hmm_name = [i for i in hmm.split('\n') if (i and (i[:4] == 'NAME'))][0].split()[1]
     return hmm, hmm_name
 
-def calculate_hmm_information_content_profile(hmm):
-    def get_logo_url(hmm):
-        url = 'http://skylign.org/'
-        payload = {'processing': 'hmm'}
-        headers = {'Accept': 'application/json'}
-        files = {'file': ('bla', hmm)}
-        r = requests.post(url, data = payload, headers = headers, files = files)
-        return r.json()['url']
-    url = get_logo_url(hmm)
-    def get_logo(url):
-        headers = {'Accept': 'application/json'}
-        r = requests.get(url, headers = headers)
-        logo = r.json()
+#def calculate_hmm_information_content_profile(hmm):
+#    def get_logo_url(hmm):
+#        url = 'http://skylign.org/'
+#        payload = {'processing': 'hmm'}
+#        headers = {'Accept': 'application/json'}
+#        files = {'file': ('bla', hmm)}
+#        r = requests.post(url, data = payload, headers = headers, files = files)
+#        return r.json()['url']
+#    url = get_logo_url(hmm)
+#    def get_logo(url):
+#        headers = {'Accept': 'application/json'}
+#        r = requests.get(url, headers = headers)
+#        logo = r.json()
+#        return logo
+#    logo = get_logo(url)
+#    hmm_information_content_profile = [round(sum([float(j.split(':')[1]) for j in i]), 3) for i in logo['height_arr']]
+#    return hmm_information_content_profile
+
+def calculate_hmm_information_content_profile(hmm_file):
+    subprocess.run(['perl', sys_path[0] + '/hmm_to_logo.pl', hmm_file])
+    def read_logo():
+        with open('logo.json', encoding = 'UTF-8') as f:
+            logo = json.load(f)
+        remove_file('logo.json')
         return logo
-    logo = get_logo(url)
+    logo = read_logo()
     hmm_information_content_profile = [round(sum([float(j.split(':')[1]) for j in i]), 3) for i in logo['height_arr']]
     return hmm_information_content_profile
 
@@ -136,7 +148,8 @@ def write_domain_color_masks(domains, hmm_name, structure_residue_schemes_direct
 
 def main(hmm_file, seq_database_file, structure_residue_schemes_directory):
     hmm, hmm_name = read_hmm(hmm_file)
-    hmm_information_content_profile = calculate_hmm_information_content_profile(hmm)
+#    hmm_information_content_profile = calculate_hmm_information_content_profile(hmm)
+    hmm_information_content_profile = calculate_hmm_information_content_profile(hmm_file)
     write_hmm_information_content_profile(hmm_information_content_profile, hmm_name)
     domains = run_hmmsearch(hmm_file, seq_database_file)
     write_domains(domains, hmm_name)

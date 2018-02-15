@@ -21,10 +21,10 @@ def run_hmmbuild():
     subprocess.run(['hmmbuild', '-o', '/dev/null', '--amino', '--wpb', '--eent', 'p.hmm', 'a.sto'])
     remove_file('a.sto')
 
-def read_hmm():
-    with open('p.hmm', encoding = 'UTF-8') as f:
-        hmm = f.read()
-    return hmm
+#def read_hmm():
+#    with open('p.hmm', encoding = 'UTF-8') as f:
+#        hmm = f.read()
+#    return hmm
 
 def run_hmmsearch(hmmsearch_database_file):
     subprocess.run(['hmmsearch', '-o', '/dev/null', '-A', 'a.sto', '--domtblout', 'd.out', '--notextw', '--incE', '0.01', '--incdomE', '0.03', 'p.hmm', hmmsearch_database_file])
@@ -58,8 +58,9 @@ def main(fasta_file, phmmer_database_file, hmmsearch_database_file, structure_re
     PDB_chain_ID = read_fasta(fasta_file)
     run_phmmer(fasta_file, phmmer_database_file)
     run_hmmbuild()
-    hmm = read_hmm()
-    hmm_information_content_profile = calculate_hmm_information_content_profile(hmm)
+#    hmm = read_hmm()
+#    hmm_information_content_profile = calculate_hmm_information_content_profile(hmm)
+    hmm_information_content_profile = calculate_hmm_information_content_profile('p.hmm')
     domains = run_hmmsearch(hmmsearch_database_file)
     calculate_domain_information_content_profiles(domains, hmm_information_content_profile)
     write_domain_color_masks(domains, PDB_chain_ID, structure_residue_schemes_directory)

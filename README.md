@@ -7,11 +7,11 @@ TBD
 ## Requirements
 
   - Python >=3.5 (for `subprocess.run()`)
-  - [Requests](http://docs.python-requests.org/en/master/#) Python 3 library (for making [Skylign](http://skylign.org/) requests)
+  - [Bio::HMM::Logo](http://skylign.org/help/install) Perl library for calculating HMM information content profiles locally or [Requests](http://docs.python-requests.org/en/master/#) Python 3 library for making [skylign.org](http://skylign.org/) requests
   - [HMMER v3.1b2](http://hmmer.org/) program binaries in `$PATH`
   - `phmmer`/`hmmsearch` target sequence database files; examples can be downloaded using `database/sequence/update_databases.sh`
   - Up-to-date PDB structure residue scheme files; can be generated using `database/PDB_mmCIFs/update_mmCIFs.sh`
-  - `run_fasta_local.py` requires `run_hmm_local.py` be present in the same directory
+  - `run_fasta_local.py` requires `run_hmm_local.py` be present in the same directory; both programs require the `hmm_to_logo.pl` script next to them
   - Write permission in the working directory
 
 ## Using 3DPatch-tools
