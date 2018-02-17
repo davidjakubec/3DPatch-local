@@ -52,6 +52,35 @@ def run_hmmsearch(hmmsearch_database_file):
     domains = process_summary(alignments)
     return domains
 
+def run_hmmalign(fasta_file, PDB_chain_ID):
+    subprocess.run(['hmmalign', '-o', 'a.sto', '--amino', 'p.hmm', fasta_file])
+    remove_file('p.hmm')
+    def read_alignment():
+        with open('a.sto', encoding = 'UTF-8') as f:
+            cont = f.read().split('\n')
+        alignment = ''.join([i.split()[-1] for i in cont if (i and (i[:2] != '//') and (i[0] != '#'))])
+        model = ''.join([i.split()[-1] for i in cont if (i and (i[:7] == '#=GC RF'))])
+        remove_file('a.sto')
+        return alignment, model
+    alignment, model = read_alignment()
+    def process_alignment(alignment, model):
+        alignment_position = 0
+        model_position = 0
+        index_maps = []
+        for i in range(len(alignment)):
+            if alignment[i] != '-':
+                alignment_position += 1
+            if model[i] == 'x':
+                model_position += 1
+                index_maps.append((alignment_position, model_position, i))
+        sequence = alignment[index_maps[0][2]:(index_maps[-1][2] + 1)]
+        match_state_index_maps = [i for i in index_maps if (alignment[i[2]] != '-')]
+        hmm_start, hmm_end, seq_start, seq_end = match_state_index_maps[0][1], match_state_index_maps[-1][1], match_state_index_maps[0][0], match_state_index_maps[-1][0]
+        return hmm_start, hmm_end, seq_start, seq_end, sequence
+    hmm_start, hmm_end, seq_start, seq_end, sequence = process_alignment(alignment, model)
+    domains = [[PDB_chain_ID, str(hmm_start), str(hmm_end), str(seq_start), str(seq_end), sequence]]
+    return domains
+
 ################################################################################
 
 def main(fasta_file, phmmer_database_file, hmmsearch_database_file, structure_residue_schemes_directory):
@@ -65,5 +94,17 @@ def main(fasta_file, phmmer_database_file, hmmsearch_database_file, structure_re
     calculate_domain_information_content_profiles(domains, hmm_information_content_profile)
     write_domain_color_masks(domains, PDB_chain_ID, structure_residue_schemes_directory)
 
+def alternative_main(fasta_file, phmmer_database_file, structure_residue_schemes_directory):
+    PDB_chain_ID = read_fasta(fasta_file)
+    run_phmmer(fasta_file, phmmer_database_file)
+    run_hmmbuild()
+    hmm_information_content_profile = calculate_hmm_information_content_profile('p.hmm')
+    domains = run_hmmalign(fasta_file, PDB_chain_ID)
+    calculate_domain_information_content_profiles(domains, hmm_information_content_profile)
+    write_domain_color_masks(domains, PDB_chain_ID, structure_residue_schemes_directory)
+
 if (__name__ == '__main__'):
-    main(argv[1], argv[2], argv[3], argv[4])
+    if (len(argv) == 5):
+        main(argv[1], argv[2], argv[3], argv[4])
+    elif (len(argv) == 4):
+        alternative_main(argv[1], argv[2], argv[3])
