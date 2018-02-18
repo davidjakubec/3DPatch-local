@@ -25,7 +25,7 @@ function drawDomain(reader) {
     var domain = JSON.parse(reader.result);
     var pdbId = domain.pdbId;
     var colorMap = new Map([
-        ["skipped", "skipped"],
+        ["s", "skipped"],
         ["d", {"r": 0.839, "g": 0.910, "b": 0.976}],
         ["m", {"r": 0.749, "g": 0.937, "b": 0.561}],
         ["i", {"r": 0.749, "g": 0.937, "b": 0.561}],
@@ -39,7 +39,7 @@ function drawDomain(reader) {
         ["7", {"r": 0.3415, "g": 0.062325, "b": 0.429425}],
         ["8", {"r": 0.169575, "g": 0.042489, "b": 0.340874}],
         ["9", {"r": 0.029432, "g": 0.021503, "b": 0.114621}]]);
-    var colorMask = domain.colorMask.map(function (i) {return colorMap.get(i);});
+    var colorMask = (Array.from(domain.colorMask)).map(function (i) {return colorMap.get(i);});
     plugin.destroy();
     LiteMolWrapper(colorMask);
     window.plugin = LiteMol.Plugin.create({target: "#litemol", viewportBackground: "#FFFFFF", layoutState: {hideControls: true}});

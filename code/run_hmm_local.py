@@ -118,7 +118,7 @@ def write_domain_color_masks(domains, hmm_name, structure_residue_schemes_direct
                 chain_residue_index += 1
         return structure_residue_scheme_information_content_profile
     def convert_profile_to_color_mask(structure_information_content_profile):
-        domain_color_mask = ['skipped',]
+        domain_color_mask = ['s',]
         for information_content in structure_information_content_profile:
             if (information_content == 'd'):
                 color = 'd'
@@ -130,6 +130,7 @@ def write_domain_color_masks(domains, hmm_name, structure_residue_schemes_direct
                 normalized_information_content = information_content / 6.45311498641968
                 color = str(int(10 * normalized_information_content))
             domain_color_mask.append(color)
+        domain_color_mask = ''.join(domain_color_mask)
         return domain_color_mask
     for domain in domains:
         PDB_ID = domain[0].split('_')[0]
